@@ -1,5 +1,6 @@
 import React from 'react';
-import Styles from '../styles';
+import Colors from '../styles/colors';
+import Typography from '../styles/typography';
 import Avatar from '../avatar';
 import StylePropable from '../mixins/style-propable';
 import ThemeManager from '../styles/theme-manager';
@@ -57,8 +58,8 @@ const CardHeader = React.createClass({
 
   getDefaultProps() {
     return {
-      titleColor: Styles.Colors.darkBlack,
-      subtitleColor: Styles.Colors.lightBlack,
+      titleColor: Colors.darkBlack,
+      subtitleColor: Colors.lightBlack,
       avatar: null,
     };
   },
@@ -68,7 +69,7 @@ const CardHeader = React.createClass({
       root: {
         height: 72,
         padding: 16,
-        fontWeight: Styles.Typography.fontWeightMedium,
+        fontWeight: Typography.fontWeightMedium,
         boxSizing: 'border-box',
         position: 'relative',
       },

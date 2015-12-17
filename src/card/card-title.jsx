@@ -1,5 +1,5 @@
 import React from 'react';
-import Styles from '../styles';
+import Colors from '../styles/colors';
 import StylePropable from '../mixins/style-propable';
 import ThemeManager from '../styles/theme-manager';
 import DefaultRawTheme from '../styles/raw-themes/light-raw-theme';
@@ -56,8 +56,8 @@ const CardTitle = React.createClass({
 
   getDefaultProps() {
     return {
-      titleColor: Styles.Colors.darkBlack,
-      subtitleColor: Styles.Colors.lightBlack,
+      titleColor: Colors.darkBlack,
+      subtitleColor: Colors.lightBlack,
     };
   },
 

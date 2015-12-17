@@ -70,7 +70,7 @@ export ToolbarTitle from './toolbar/toolbar-title';
 export Tooltip from './tooltip';
 export Utils from './utils';
 
-import { NavigationMenu, NavigationChevronLeft, NavigationChevronRight } from './svg-icons/navigation';
+import { NavigationMenu, NavigationChevronLeft, NavigationChevronRight } from './svg-icons';
 export const Icons = {
   NavigationMenu,
   NavigationChevronLeft,
