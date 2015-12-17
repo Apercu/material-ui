@@ -1,4 +1,4 @@
-export AppBar from './app-bar'
+export AppBar from './app-bar';
 export AppCanvas from './app-canvas';
 export AutoComplete from './auto-complete';
 export Avatar from './avatar';
@@ -70,9 +70,9 @@ export ToolbarTitle from './toolbar/toolbar-title';
 export Tooltip from './tooltip';
 export Utils from './utils';
 
-import { NavigationMenu, NavigationChevronLeft, NavigationChevronRight } from './svg-icons/navigation'
+import { NavigationMenu, NavigationChevronLeft, NavigationChevronRight } from './svg-icons/navigation';
 export const Icons = {
   NavigationMenu,
   NavigationChevronLeft,
-  NavigationChevronRight
-}
+  NavigationChevronRight,
+};
