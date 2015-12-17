@@ -1,4 +1,2 @@
-export default {
-  Tab: require('./tab'),
-  Tabs: require('./tabs'),
-};
+export Tab from './tab';
+export Tabs from './tabs';

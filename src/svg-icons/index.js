@@ -1,923 +1,920 @@
-export default {
-	ActionAccessibility: require('./action/accessibility'),
-	ActionAccessible: require('./action/accessible'),
-	ActionAccountBalanceWallet: require('./action/account-balance-wallet'),
-	ActionAccountBalance: require('./action/account-balance'),
-	ActionAccountBox: require('./action/account-box'),
-	ActionAccountCircle: require('./action/account-circle'),
-	ActionAddShoppingCart: require('./action/add-shopping-cart'),
-	ActionAlarmAdd: require('./action/alarm-add'),
-	ActionAlarmOff: require('./action/alarm-off'),
-	ActionAlarmOn: require('./action/alarm-on'),
-	ActionAlarm: require('./action/alarm'),
-	ActionAllOut: require('./action/all-out'),
-	ActionAndroid: require('./action/android'),
-	ActionAnnouncement: require('./action/announcement'),
-	ActionAspectRatio: require('./action/aspect-ratio'),
-	ActionAssessment: require('./action/assessment'),
-	ActionAssignmentInd: require('./action/assignment-ind'),
-	ActionAssignmentLate: require('./action/assignment-late'),
-	ActionAssignmentReturn: require('./action/assignment-return'),
-	ActionAssignmentReturned: require('./action/assignment-returned'),
-	ActionAssignmentTurnedIn: require('./action/assignment-turned-in'),
-	ActionAssignment: require('./action/assignment'),
-	ActionAutorenew: require('./action/autorenew'),
-	ActionBackup: require('./action/backup'),
-	ActionBook: require('./action/book'),
-	ActionBookmarkBorder: require('./action/bookmark-border'),
-	ActionBookmark: require('./action/bookmark'),
-	ActionBugReport: require('./action/bug-report'),
-	ActionBuild: require('./action/build'),
-	ActionCached: require('./action/cached'),
-	ActionCameraEnhance: require('./action/camera-enhance'),
-	ActionCardGiftcard: require('./action/card-giftcard'),
-	ActionCardMembership: require('./action/card-membership'),
-	ActionCardTravel: require('./action/card-travel'),
-	ActionChangeHistory: require('./action/change-history'),
-	ActionCheckCircle: require('./action/check-circle'),
-	ActionChromeReaderMode: require('./action/chrome-reader-mode'),
-	ActionClass: require('./action/class'),
-	ActionCode: require('./action/code'),
-	ActionCompareArrows: require('./action/compare-arrows'),
-	ActionCopyright: require('./action/copyright'),
-	ActionCreditCard: require('./action/credit-card'),
-	ActionDashboard: require('./action/dashboard'),
-	ActionDateRange: require('./action/date-range'),
-	ActionDelete: require('./action/delete'),
-	ActionDescription: require('./action/description'),
-	ActionDns: require('./action/dns'),
-	ActionDoneAll: require('./action/done-all'),
-	ActionDone: require('./action/done'),
-	ActionDonutLarge: require('./action/donut-large'),
-	ActionDonutSmall: require('./action/donut-small'),
-	ActionEject: require('./action/eject'),
-	ActionEventSeat: require('./action/event-seat'),
-	ActionEvent: require('./action/event'),
-	ActionExitToApp: require('./action/exit-to-app'),
-	ActionExplore: require('./action/explore'),
-	ActionExtension: require('./action/extension'),
-	ActionFace: require('./action/face'),
-	ActionFavoriteBorder: require('./action/favorite-border'),
-	ActionFavorite: require('./action/favorite'),
-	ActionFeedback: require('./action/feedback'),
-	ActionFindInPage: require('./action/find-in-page'),
-	ActionFindReplace: require('./action/find-replace'),
-	ActionFingerprint: require('./action/fingerprint'),
-	ActionFlightLand: require('./action/flight-land'),
-	ActionFlightTakeoff: require('./action/flight-takeoff'),
-	ActionFlipToBack: require('./action/flip-to-back'),
-	ActionFlipToFront: require('./action/flip-to-front'),
-	ActionGavel: require('./action/gavel'),
-	ActionGetApp: require('./action/get-app'),
-	ActionGif: require('./action/gif'),
-	ActionGrade: require('./action/grade'),
-	ActionGroupWork: require('./action/group-work'),
-	ActionHelpOutline: require('./action/help-outline'),
-	ActionHelp: require('./action/help'),
-	ActionHighlightOff: require('./action/highlight-off'),
-	ActionHistory: require('./action/history'),
-	ActionHome: require('./action/home'),
-	ActionHourglassEmpty: require('./action/hourglass-empty'),
-	ActionHourglassFull: require('./action/hourglass-full'),
-	ActionHttp: require('./action/http'),
-	ActionHttps: require('./action/https'),
-	ActionImportantDevices: require('./action/important-devices'),
-	ActionInfoOutline: require('./action/info-outline'),
-	ActionInfo: require('./action/info'),
-	ActionInput: require('./action/input'),
-	ActionInvertColors: require('./action/invert-colors'),
-	ActionLabelOutline: require('./action/label-outline'),
-	ActionLabel: require('./action/label'),
-	ActionLanguage: require('./action/language'),
-	ActionLaunch: require('./action/launch'),
-	ActionLightbulbOutline: require('./action/lightbulb-outline'),
-	ActionLineStyle: require('./action/line-style'),
-	ActionLineWeight: require('./action/line-weight'),
-	ActionList: require('./action/list'),
-	ActionLockOpen: require('./action/lock-open'),
-	ActionLockOutline: require('./action/lock-outline'),
-	ActionLock: require('./action/lock'),
-	ActionLoyalty: require('./action/loyalty'),
-	ActionMarkunreadMailbox: require('./action/markunread-mailbox'),
-	ActionMotorcycle: require('./action/motorcycle'),
-	ActionNoteAdd: require('./action/note-add'),
-	ActionOfflinePin: require('./action/offline-pin'),
-	ActionOpacity: require('./action/opacity'),
-	ActionOpenInBrowser: require('./action/open-in-browser'),
-	ActionOpenInNew: require('./action/open-in-new'),
-	ActionOpenWith: require('./action/open-with'),
-	ActionPageview: require('./action/pageview'),
-	ActionPanTool: require('./action/pan-tool'),
-	ActionPayment: require('./action/payment'),
-	ActionPermCameraMic: require('./action/perm-camera-mic'),
-	ActionPermContactCalendar: require('./action/perm-contact-calendar'),
-	ActionPermDataSetting: require('./action/perm-data-setting'),
-	ActionPermDeviceInformation: require('./action/perm-device-information'),
-	ActionPermIdentity: require('./action/perm-identity'),
-	ActionPermMedia: require('./action/perm-media'),
-	ActionPermPhoneMsg: require('./action/perm-phone-msg'),
-	ActionPermScanWifi: require('./action/perm-scan-wifi'),
-	ActionPets: require('./action/pets'),
-	ActionPictureInPictureAlt: require('./action/picture-in-picture-alt'),
-	ActionPictureInPicture: require('./action/picture-in-picture'),
-	ActionPlayForWork: require('./action/play-for-work'),
-	ActionPolymer: require('./action/polymer'),
-	ActionPowerSettingsNew: require('./action/power-settings-new'),
-	ActionPregnantWoman: require('./action/pregnant-woman'),
-	ActionPrint: require('./action/print'),
-	ActionQueryBuilder: require('./action/query-builder'),
-	ActionQuestionAnswer: require('./action/question-answer'),
-	ActionReceipt: require('./action/receipt'),
-	ActionRecordVoiceOver: require('./action/record-voice-over'),
-	ActionRedeem: require('./action/redeem'),
-	ActionReorder: require('./action/reorder'),
-	ActionReportProblem: require('./action/report-problem'),
-	ActionRestore: require('./action/restore'),
-	ActionRoom: require('./action/room'),
-	ActionRoundedCorner: require('./action/rounded-corner'),
-	ActionRowing: require('./action/rowing'),
-	ActionSchedule: require('./action/schedule'),
-	ActionSearch: require('./action/search'),
-	ActionSettingsApplications: require('./action/settings-applications'),
-	ActionSettingsBackupRestore: require('./action/settings-backup-restore'),
-	ActionSettingsBluetooth: require('./action/settings-bluetooth'),
-	ActionSettingsBrightness: require('./action/settings-brightness'),
-	ActionSettingsCell: require('./action/settings-cell'),
-	ActionSettingsEthernet: require('./action/settings-ethernet'),
-	ActionSettingsInputAntenna: require('./action/settings-input-antenna'),
-	ActionSettingsInputComponent: require('./action/settings-input-component'),
-	ActionSettingsInputComposite: require('./action/settings-input-composite'),
-	ActionSettingsInputHdmi: require('./action/settings-input-hdmi'),
-	ActionSettingsInputSvideo: require('./action/settings-input-svideo'),
-	ActionSettingsOverscan: require('./action/settings-overscan'),
-	ActionSettingsPhone: require('./action/settings-phone'),
-	ActionSettingsPower: require('./action/settings-power'),
-	ActionSettingsRemote: require('./action/settings-remote'),
-	ActionSettingsVoice: require('./action/settings-voice'),
-	ActionSettings: require('./action/settings'),
-	ActionShopTwo: require('./action/shop-two'),
-	ActionShop: require('./action/shop'),
-	ActionShoppingBasket: require('./action/shopping-basket'),
-	ActionShoppingCart: require('./action/shopping-cart'),
-	ActionSpeakerNotes: require('./action/speaker-notes'),
-	ActionSpellcheck: require('./action/spellcheck'),
-	ActionStars: require('./action/stars'),
-	ActionStore: require('./action/store'),
-	ActionSubject: require('./action/subject'),
-	ActionSupervisorAccount: require('./action/supervisor-account'),
-	ActionSwapHoriz: require('./action/swap-horiz'),
-	ActionSwapVert: require('./action/swap-vert'),
-	ActionSwapVerticalCircle: require('./action/swap-vertical-circle'),
-	ActionSystemUpdateAlt: require('./action/system-update-alt'),
-	ActionTabUnselected: require('./action/tab-unselected'),
-	ActionTab: require('./action/tab'),
-	ActionTheaters: require('./action/theaters'),
-	ActionThreeDRotation: require('./action/three-d-rotation'),
-	ActionThumbDown: require('./action/thumb-down'),
-	ActionThumbUp: require('./action/thumb-up'),
-	ActionThumbsUpDown: require('./action/thumbs-up-down'),
-	ActionTimeline: require('./action/timeline'),
-	ActionToc: require('./action/toc'),
-	ActionToday: require('./action/today'),
-	ActionToll: require('./action/toll'),
-	ActionTouchApp: require('./action/touch-app'),
-	ActionTrackChanges: require('./action/track-changes'),
-	ActionTranslate: require('./action/translate'),
-	ActionTrendingDown: require('./action/trending-down'),
-	ActionTrendingFlat: require('./action/trending-flat'),
-	ActionTrendingUp: require('./action/trending-up'),
-	ActionTurnedInNot: require('./action/turned-in-not'),
-	ActionTurnedIn: require('./action/turned-in'),
-	ActionUpdate: require('./action/update'),
-	ActionVerifiedUser: require('./action/verified-user'),
-	ActionViewAgenda: require('./action/view-agenda'),
-	ActionViewArray: require('./action/view-array'),
-	ActionViewCarousel: require('./action/view-carousel'),
-	ActionViewColumn: require('./action/view-column'),
-	ActionViewDay: require('./action/view-day'),
-	ActionViewHeadline: require('./action/view-headline'),
-	ActionViewList: require('./action/view-list'),
-	ActionViewModule: require('./action/view-module'),
-	ActionViewQuilt: require('./action/view-quilt'),
-	ActionViewStream: require('./action/view-stream'),
-	ActionViewWeek: require('./action/view-week'),
-	ActionVisibilityOff: require('./action/visibility-off'),
-	ActionVisibility: require('./action/visibility'),
-	ActionWatchLater: require('./action/watch-later'),
-	ActionWork: require('./action/work'),
-	ActionYoutubeSearchedFor: require('./action/youtube-searched-for'),
-	ActionZoomIn: require('./action/zoom-in'),
-	ActionZoomOut: require('./action/zoom-out'),
-	AlertAddAlert: require('./alert/add-alert'),
-	AlertErrorOutline: require('./alert/error-outline'),
-	AlertError: require('./alert/error'),
-	AlertWarning: require('./alert/warning'),
-	AvAddToQueue: require('./av/add-to-queue'),
-	AvAirplay: require('./av/airplay'),
-	AvAlbum: require('./av/album'),
-	AvArtTrack: require('./av/art-track'),
-	AvAvTimer: require('./av/av-timer'),
-	AvClosedCaption: require('./av/closed-caption'),
-	AvEqualizer: require('./av/equalizer'),
-	AvExplicit: require('./av/explicit'),
-	AvFastForward: require('./av/fast-forward'),
-	AvFastRewind: require('./av/fast-rewind'),
-	AvFiberDvr: require('./av/fiber-dvr'),
-	AvFiberManualRecord: require('./av/fiber-manual-record'),
-	AvFiberNew: require('./av/fiber-new'),
-	AvFiberPin: require('./av/fiber-pin'),
-	AvFiberSmartRecord: require('./av/fiber-smart-record'),
-	AvForward10: require('./av/forward-10'),
-	AvForward30: require('./av/forward-30'),
-	AvForward5: require('./av/forward-5'),
-	AvGames: require('./av/games'),
-	AvHd: require('./av/hd'),
-	AvHearing: require('./av/hearing'),
-	AvHighQuality: require('./av/high-quality'),
-	AvLibraryAdd: require('./av/library-add'),
-	AvLibraryBooks: require('./av/library-books'),
-	AvLibraryMusic: require('./av/library-music'),
-	AvLoop: require('./av/loop'),
-	AvMicNone: require('./av/mic-none'),
-	AvMicOff: require('./av/mic-off'),
-	AvMic: require('./av/mic'),
-	AvMovie: require('./av/movie'),
-	AvMusicVideo: require('./av/music-video'),
-	AvNewReleases: require('./av/new-releases'),
-	AvNotInterested: require('./av/not-interested'),
-	AvPauseCircleFilled: require('./av/pause-circle-filled'),
-	AvPauseCircleOutline: require('./av/pause-circle-outline'),
-	AvPause: require('./av/pause'),
-	AvPlayArrow: require('./av/play-arrow'),
-	AvPlayCircleFilled: require('./av/play-circle-filled'),
-	AvPlayCircleOutline: require('./av/play-circle-outline'),
-	AvPlaylistAddCheck: require('./av/playlist-add-check'),
-	AvPlaylistAdd: require('./av/playlist-add'),
-	AvPlaylistPlay: require('./av/playlist-play'),
-	AvQueueMusic: require('./av/queue-music'),
-	AvQueuePlayNext: require('./av/queue-play-next'),
-	AvQueue: require('./av/queue'),
-	AvRadio: require('./av/radio'),
-	AvRecentActors: require('./av/recent-actors'),
-	AvRemoveFromQueue: require('./av/remove-from-queue'),
-	AvRepeatOne: require('./av/repeat-one'),
-	AvRepeat: require('./av/repeat'),
-	AvReplay10: require('./av/replay-10'),
-	AvReplay30: require('./av/replay-30'),
-	AvReplay5: require('./av/replay-5'),
-	AvReplay: require('./av/replay'),
-	AvShuffle: require('./av/shuffle'),
-	AvSkipNext: require('./av/skip-next'),
-	AvSkipPrevious: require('./av/skip-previous'),
-	AvSlowMotionVideo: require('./av/slow-motion-video'),
-	AvSnooze: require('./av/snooze'),
-	AvSortByAlpha: require('./av/sort-by-alpha'),
-	AvStop: require('./av/stop'),
-	AvSubscriptions: require('./av/subscriptions'),
-	AvSubtitles: require('./av/subtitles'),
-	AvSurroundSound: require('./av/surround-sound'),
-	AvVideoLibrary: require('./av/video-library'),
-	AvVideocamOff: require('./av/videocam-off'),
-	AvVideocam: require('./av/videocam'),
-	AvVolumeDown: require('./av/volume-down'),
-	AvVolumeMute: require('./av/volume-mute'),
-	AvVolumeOff: require('./av/volume-off'),
-	AvVolumeUp: require('./av/volume-up'),
-	AvWebAsset: require('./av/web-asset'),
-	AvWeb: require('./av/web'),
-	CommunicationBusiness: require('./communication/business'),
-	CommunicationCallEnd: require('./communication/call-end'),
-	CommunicationCallMade: require('./communication/call-made'),
-	CommunicationCallMerge: require('./communication/call-merge'),
-	CommunicationCallMissedOutgoing: require('./communication/call-missed-outgoing'),
-	CommunicationCallMissed: require('./communication/call-missed'),
-	CommunicationCallReceived: require('./communication/call-received'),
-	CommunicationCallSplit: require('./communication/call-split'),
-	CommunicationCall: require('./communication/call'),
-	CommunicationChatBubbleOutline: require('./communication/chat-bubble-outline'),
-	CommunicationChatBubble: require('./communication/chat-bubble'),
-	CommunicationChat: require('./communication/chat'),
-	CommunicationClearAll: require('./communication/clear-all'),
-	CommunicationComment: require('./communication/comment'),
-	CommunicationContactMail: require('./communication/contact-mail'),
-	CommunicationContactPhone: require('./communication/contact-phone'),
-	CommunicationContacts: require('./communication/contacts'),
-	CommunicationDialerSip: require('./communication/dialer-sip'),
-	CommunicationDialpad: require('./communication/dialpad'),
-	CommunicationEmail: require('./communication/email'),
-	CommunicationForum: require('./communication/forum'),
-	CommunicationImportContacts: require('./communication/import-contacts'),
-	CommunicationImportExport: require('./communication/import-export'),
-	CommunicationInvertColorsOff: require('./communication/invert-colors-off'),
-	CommunicationLiveHelp: require('./communication/live-help'),
-	CommunicationLocationOff: require('./communication/location-off'),
-	CommunicationLocationOn: require('./communication/location-on'),
-	CommunicationMailOutline: require('./communication/mail-outline'),
-	CommunicationMessage: require('./communication/message'),
-	CommunicationNoSim: require('./communication/no-sim'),
-	CommunicationPhone: require('./communication/phone'),
-	CommunicationPhonelinkErase: require('./communication/phonelink-erase'),
-	CommunicationPhonelinkLock: require('./communication/phonelink-lock'),
-	CommunicationPhonelinkRing: require('./communication/phonelink-ring'),
-	CommunicationPhonelinkSetup: require('./communication/phonelink-setup'),
-	CommunicationPortableWifiOff: require('./communication/portable-wifi-off'),
-	CommunicationPresentToAll: require('./communication/present-to-all'),
-	CommunicationRingVolume: require('./communication/ring-volume'),
-	CommunicationScreenShare: require('./communication/screen-share'),
-	CommunicationSpeakerPhone: require('./communication/speaker-phone'),
-	CommunicationStayCurrentLandscape: require('./communication/stay-current-landscape'),
-	CommunicationStayCurrentPortrait: require('./communication/stay-current-portrait'),
-	CommunicationStayPrimaryLandscape: require('./communication/stay-primary-landscape'),
-	CommunicationStayPrimaryPortrait: require('./communication/stay-primary-portrait'),
-	CommunicationStopScreenShare: require('./communication/stop-screen-share'),
-	CommunicationSwapCalls: require('./communication/swap-calls'),
-	CommunicationTactMail: require('./communication/tact-mail'),
-	CommunicationTextsms: require('./communication/textsms'),
-	CommunicationVoicemail: require('./communication/voicemail'),
-	CommunicationVpnKey: require('./communication/vpn-key'),
-	ContentAddBox: require('./content/add-box'),
-	ContentAddCircleOutline: require('./content/add-circle-outline'),
-	ContentAddCircle: require('./content/add-circle'),
-	ContentAdd: require('./content/add'),
-	ContentArchive: require('./content/archive'),
-	ContentBackspace: require('./content/backspace'),
-	ContentBlock: require('./content/block'),
-	ContentClear: require('./content/clear'),
-	ContentContentCopy: require('./content/content-copy'),
-	ContentContentCut: require('./content/content-cut'),
-	ContentContentPaste: require('./content/content-paste'),
-	ContentCreate: require('./content/create'),
-	ContentDrafts: require('./content/drafts'),
-	ContentFilterList: require('./content/filter-list'),
-	ContentFlag: require('./content/flag'),
-	ContentFontDownload: require('./content/font-download'),
-	ContentForward: require('./content/forward'),
-	ContentGesture: require('./content/gesture'),
-	ContentInbox: require('./content/inbox'),
-	ContentLink: require('./content/link'),
-	ContentMail: require('./content/mail'),
-	ContentMarkunread: require('./content/markunread'),
-	ContentMoveToInbox: require('./content/move-to-inbox'),
-	ContentNextWeek: require('./content/next-week'),
-	ContentRedo: require('./content/redo'),
-	ContentRemoveCircleOutline: require('./content/remove-circle-outline'),
-	ContentRemoveCircle: require('./content/remove-circle'),
-	ContentRemove: require('./content/remove'),
-	ContentReplyAll: require('./content/reply-all'),
-	ContentReply: require('./content/reply'),
-	ContentReport: require('./content/report'),
-	ContentSave: require('./content/save'),
-	ContentSelectAll: require('./content/select-all'),
-	ContentSend: require('./content/send'),
-	ContentSort: require('./content/sort'),
-	ContentTextFormat: require('./content/text-format'),
-	ContentUnarchive: require('./content/unarchive'),
-	ContentUndo: require('./content/undo'),
-	ContentWeekend: require('./content/weekend'),
-	DeviceAccessAlarm: require('./device/access-alarm'),
-	DeviceAccessAlarms: require('./device/access-alarms'),
-	DeviceAccessTime: require('./device/access-time'),
-	DeviceAddAlarm: require('./device/add-alarm'),
-	DeviceAirplanemodeActive: require('./device/airplanemode-active'),
-	DeviceAirplanemodeInactive: require('./device/airplanemode-inactive'),
-	DeviceBattery20: require('./device/battery-20'),
-	DeviceBattery30: require('./device/battery-30'),
-	DeviceBattery50: require('./device/battery-50'),
-	DeviceBattery60: require('./device/battery-60'),
-	DeviceBattery80: require('./device/battery-80'),
-	DeviceBattery90: require('./device/battery-90'),
-	DeviceBatteryAlert: require('./device/battery-alert'),
-	DeviceBatteryCharging20: require('./device/battery-charging-20'),
-	DeviceBatteryCharging30: require('./device/battery-charging-30'),
-	DeviceBatteryCharging50: require('./device/battery-charging-50'),
-	DeviceBatteryCharging60: require('./device/battery-charging-60'),
-	DeviceBatteryCharging80: require('./device/battery-charging-80'),
-	DeviceBatteryCharging90: require('./device/battery-charging-90'),
-	DeviceBatteryChargingFull: require('./device/battery-charging-full'),
-	DeviceBatteryFull: require('./device/battery-full'),
-	DeviceBatteryStd: require('./device/battery-std'),
-	DeviceBatteryUnknown: require('./device/battery-unknown'),
-	DeviceBluetoothConnected: require('./device/bluetooth-connected'),
-	DeviceBluetoothDisabled: require('./device/bluetooth-disabled'),
-	DeviceBluetoothSearching: require('./device/bluetooth-searching'),
-	DeviceBluetooth: require('./device/bluetooth'),
-	DeviceBrightnessAuto: require('./device/brightness-auto'),
-	DeviceBrightnessHigh: require('./device/brightness-high'),
-	DeviceBrightnessLow: require('./device/brightness-low'),
-	DeviceBrightnessMedium: require('./device/brightness-medium'),
-	DeviceDataUsage: require('./device/data-usage'),
-	DeviceDeveloperMode: require('./device/developer-mode'),
-	DeviceDevices: require('./device/devices'),
-	DeviceDvr: require('./device/dvr'),
-	DeviceGpsFixed: require('./device/gps-fixed'),
-	DeviceGpsNotFixed: require('./device/gps-not-fixed'),
-	DeviceGpsOff: require('./device/gps-off'),
-	DeviceGraphicEq: require('./device/graphic-eq'),
-	DeviceLocationDisabled: require('./device/location-disabled'),
-	DeviceLocationSearching: require('./device/location-searching'),
-	DeviceNetworkCell: require('./device/network-cell'),
-	DeviceNetworkWifi: require('./device/network-wifi'),
-	DeviceNfc: require('./device/nfc'),
-	DeviceScreenLockLandscape: require('./device/screen-lock-landscape'),
-	DeviceScreenLockPortrait: require('./device/screen-lock-portrait'),
-	DeviceScreenLockRotation: require('./device/screen-lock-rotation'),
-	DeviceScreenRotation: require('./device/screen-rotation'),
-	DeviceSdStorage: require('./device/sd-storage'),
-	DeviceSettingsSystemDaydream: require('./device/settings-system-daydream'),
-	DeviceSignalCellular0Bar: require('./device/signal-cellular-0-bar'),
-	DeviceSignalCellular1Bar: require('./device/signal-cellular-1-bar'),
-	DeviceSignalCellular2Bar: require('./device/signal-cellular-2-bar'),
-	DeviceSignalCellular3Bar: require('./device/signal-cellular-3-bar'),
-	DeviceSignalCellular4Bar: require('./device/signal-cellular-4-bar'),
-	DeviceSignalCellularConnectedNoInternet0Bar: require('./device/signal-cellular-connected-no-internet-0-bar'),
-	DeviceSignalCellularConnectedNoInternet1Bar: require('./device/signal-cellular-connected-no-internet-1-bar'),
-	DeviceSignalCellularConnectedNoInternet2Bar: require('./device/signal-cellular-connected-no-internet-2-bar'),
-	DeviceSignalCellularConnectedNoInternet3Bar: require('./device/signal-cellular-connected-no-internet-3-bar'),
-	DeviceSignalCellularConnectedNoInternet4Bar: require('./device/signal-cellular-connected-no-internet-4-bar'),
-	DeviceSignalCellularNoSim: require('./device/signal-cellular-no-sim'),
-	DeviceSignalCellularNull: require('./device/signal-cellular-null'),
-	DeviceSignalCellularOff: require('./device/signal-cellular-off'),
-	DeviceSignalWifi0Bar: require('./device/signal-wifi-0-bar'),
-	DeviceSignalWifi1BarLock: require('./device/signal-wifi-1-bar-lock'),
-	DeviceSignalWifi1Bar: require('./device/signal-wifi-1-bar'),
-	DeviceSignalWifi2BarLock: require('./device/signal-wifi-2-bar-lock'),
-	DeviceSignalWifi2Bar: require('./device/signal-wifi-2-bar'),
-	DeviceSignalWifi3BarLock: require('./device/signal-wifi-3-bar-lock'),
-	DeviceSignalWifi3Bar: require('./device/signal-wifi-3-bar'),
-	DeviceSignalWifi4BarLock: require('./device/signal-wifi-4-bar-lock'),
-	DeviceSignalWifi4Bar: require('./device/signal-wifi-4-bar'),
-	DeviceSignalWifiOff: require('./device/signal-wifi-off'),
-	DeviceStorage: require('./device/storage'),
-	DeviceUsb: require('./device/usb'),
-	DeviceWallpaper: require('./device/wallpaper'),
-	DeviceWidgets: require('./device/widgets'),
-	DeviceWifiLock: require('./device/wifi-lock'),
-	DeviceWifiTethering: require('./device/wifi-tethering'),
-	EditorAttachFile: require('./editor/attach-file'),
-	EditorAttachMoney: require('./editor/attach-money'),
-	EditorBorderAll: require('./editor/border-all'),
-	EditorBorderBottom: require('./editor/border-bottom'),
-	EditorBorderClear: require('./editor/border-clear'),
-	EditorBorderColor: require('./editor/border-color'),
-	EditorBorderHorizontal: require('./editor/border-horizontal'),
-	EditorBorderInner: require('./editor/border-inner'),
-	EditorBorderLeft: require('./editor/border-left'),
-	EditorBorderOuter: require('./editor/border-outer'),
-	EditorBorderRight: require('./editor/border-right'),
-	EditorBorderStyle: require('./editor/border-style'),
-	EditorBorderTop: require('./editor/border-top'),
-	EditorBorderVertical: require('./editor/border-vertical'),
-	EditorDragHandle: require('./editor/drag-handle'),
-	EditorFormatAlignCenter: require('./editor/format-align-center'),
-	EditorFormatAlignJustify: require('./editor/format-align-justify'),
-	EditorFormatAlignLeft: require('./editor/format-align-left'),
-	EditorFormatAlignRight: require('./editor/format-align-right'),
-	EditorFormatBold: require('./editor/format-bold'),
-	EditorFormatClear: require('./editor/format-clear'),
-	EditorFormatColorFill: require('./editor/format-color-fill'),
-	EditorFormatColorReset: require('./editor/format-color-reset'),
-	EditorFormatColorText: require('./editor/format-color-text'),
-	EditorFormatIndentDecrease: require('./editor/format-indent-decrease'),
-	EditorFormatIndentIncrease: require('./editor/format-indent-increase'),
-	EditorFormatItalic: require('./editor/format-italic'),
-	EditorFormatLineSpacing: require('./editor/format-line-spacing'),
-	EditorFormatListBulleted: require('./editor/format-list-bulleted'),
-	EditorFormatListNumbered: require('./editor/format-list-numbered'),
-	EditorFormatPaint: require('./editor/format-paint'),
-	EditorFormatQuote: require('./editor/format-quote'),
-	EditorFormatShapes: require('./editor/format-shapes'),
-	EditorFormatSize: require('./editor/format-size'),
-	EditorFormatStrikethrough: require('./editor/format-strikethrough'),
-	EditorFormatTextdirectionLToR: require('./editor/format-textdirection-l-to-r'),
-	EditorFormatTextdirectionRToL: require('./editor/format-textdirection-r-to-l'),
-	EditorFormatUnderlined: require('./editor/format-underlined'),
-	EditorFunctions: require('./editor/functions'),
-	EditorHighlight: require('./editor/highlight'),
-	EditorInsertChart: require('./editor/insert-chart'),
-	EditorInsertComment: require('./editor/insert-comment'),
-	EditorInsertDriveFile: require('./editor/insert-drive-file'),
-	EditorInsertEmoticon: require('./editor/insert-emoticon'),
-	EditorInsertInvitation: require('./editor/insert-invitation'),
-	EditorInsertLink: require('./editor/insert-link'),
-	EditorInsertPhoto: require('./editor/insert-photo'),
-	EditorLinearScale: require('./editor/linear-scale'),
-	EditorMergeType: require('./editor/merge-type'),
-	EditorModeComment: require('./editor/mode-comment'),
-	EditorModeEdit: require('./editor/mode-edit'),
-	EditorMoneyOff: require('./editor/money-off'),
-	EditorPublish: require('./editor/publish'),
-	EditorShortText: require('./editor/short-text'),
-	EditorSpaceBar: require('./editor/space-bar'),
-	EditorStrikethroughS: require('./editor/strikethrough-s'),
-	EditorTextFields: require('./editor/text-fields'),
-	EditorVerticalAlignBottom: require('./editor/vertical-align-bottom'),
-	EditorVerticalAlignCenter: require('./editor/vertical-align-center'),
-	EditorVerticalAlignTop: require('./editor/vertical-align-top'),
-	EditorWrapText: require('./editor/wrap-text'),
-	FileAttachment: require('./file/attachment'),
-	FileCloudCircle: require('./file/cloud-circle'),
-	FileCloudDone: require('./file/cloud-done'),
-	FileCloudDownload: require('./file/cloud-download'),
-	FileCloudOff: require('./file/cloud-off'),
-	FileCloudQueue: require('./file/cloud-queue'),
-	FileCloudUpload: require('./file/cloud-upload'),
-	FileCloud: require('./file/cloud'),
-	FileCreateNewFolder: require('./file/create-new-folder'),
-	FileFileDownload: require('./file/file-download'),
-	FileFileUpload: require('./file/file-upload'),
-	FileFolderOpen: require('./file/folder-open'),
-	FileFolderShared: require('./file/folder-shared'),
-	FileFolder: require('./file/folder'),
-	HardwareCastConnected: require('./hardware/cast-connected'),
-	HardwareCast: require('./hardware/cast'),
-	HardwareComputer: require('./hardware/computer'),
-	HardwareDesktopMac: require('./hardware/desktop-mac'),
-	HardwareDesktopWindows: require('./hardware/desktop-windows'),
-	HardwareDeveloperBoard: require('./hardware/developer-board'),
-	HardwareDeviceHub: require('./hardware/device-hub'),
-	HardwareDevicesOther: require('./hardware/devices-other'),
-	HardwareDock: require('./hardware/dock'),
-	HardwareGamepad: require('./hardware/gamepad'),
-	HardwareHeadsetMic: require('./hardware/headset-mic'),
-	HardwareHeadset: require('./hardware/headset'),
-	HardwareKeyboardArrowDown: require('./hardware/keyboard-arrow-down'),
-	HardwareKeyboardArrowLeft: require('./hardware/keyboard-arrow-left'),
-	HardwareKeyboardArrowRight: require('./hardware/keyboard-arrow-right'),
-	HardwareKeyboardArrowUp: require('./hardware/keyboard-arrow-up'),
-	HardwareKeyboardBackspace: require('./hardware/keyboard-backspace'),
-	HardwareKeyboardCapslock: require('./hardware/keyboard-capslock'),
-	HardwareKeyboardHide: require('./hardware/keyboard-hide'),
-	HardwareKeyboardReturn: require('./hardware/keyboard-return'),
-	HardwareKeyboardTab: require('./hardware/keyboard-tab'),
-	HardwareKeyboardVoice: require('./hardware/keyboard-voice'),
-	HardwareKeyboard: require('./hardware/keyboard'),
-	HardwareLaptopChromebook: require('./hardware/laptop-chromebook'),
-	HardwareLaptopMac: require('./hardware/laptop-mac'),
-	HardwareLaptopWindows: require('./hardware/laptop-windows'),
-	HardwareLaptop: require('./hardware/laptop'),
-	HardwareMemory: require('./hardware/memory'),
-	HardwareMouse: require('./hardware/mouse'),
-	HardwarePhoneAndroid: require('./hardware/phone-android'),
-	HardwarePhoneIphone: require('./hardware/phone-iphone'),
-	HardwarePhonelinkOff: require('./hardware/phonelink-off'),
-	HardwarePhonelink: require('./hardware/phonelink'),
-	HardwarePowerInput: require('./hardware/power-input'),
-	HardwareRouter: require('./hardware/router'),
-	HardwareScanner: require('./hardware/scanner'),
-	HardwareSecurity: require('./hardware/security'),
-	HardwareSimCard: require('./hardware/sim-card'),
-	HardwareSmartphone: require('./hardware/smartphone'),
-	HardwareSpeakerGroup: require('./hardware/speaker-group'),
-	HardwareSpeaker: require('./hardware/speaker'),
-	HardwareTabletAndroid: require('./hardware/tablet-android'),
-	HardwareTabletMac: require('./hardware/tablet-mac'),
-	HardwareTablet: require('./hardware/tablet'),
-	HardwareToys: require('./hardware/toys'),
-	HardwareTv: require('./hardware/tv'),
-	HardwareVideogameAsset: require('./hardware/videogame-asset'),
-	HardwareWatch: require('./hardware/watch'),
-	ImageAddAPhoto: require('./image/add-a-photo'),
-	ImageAddToPhotos: require('./image/add-to-photos'),
-	ImageAdjust: require('./image/adjust'),
-	ImageAssistantPhoto: require('./image/assistant-photo'),
-	ImageAssistant: require('./image/assistant'),
-	ImageAudiotrack: require('./image/audiotrack'),
-	ImageBlurCircular: require('./image/blur-circular'),
-	ImageBlurLinear: require('./image/blur-linear'),
-	ImageBlurOff: require('./image/blur-off'),
-	ImageBlurOn: require('./image/blur-on'),
-	ImageBrightness1: require('./image/brightness-1'),
-	ImageBrightness2: require('./image/brightness-2'),
-	ImageBrightness3: require('./image/brightness-3'),
-	ImageBrightness4: require('./image/brightness-4'),
-	ImageBrightness5: require('./image/brightness-5'),
-	ImageBrightness6: require('./image/brightness-6'),
-	ImageBrightness7: require('./image/brightness-7'),
-	ImageBrokenImage: require('./image/broken-image'),
-	ImageBrush: require('./image/brush'),
-	ImageCameraAlt: require('./image/camera-alt'),
-	ImageCameraFront: require('./image/camera-front'),
-	ImageCameraRear: require('./image/camera-rear'),
-	ImageCameraRoll: require('./image/camera-roll'),
-	ImageCamera: require('./image/camera'),
-	ImageCenterFocusStrong: require('./image/center-focus-strong'),
-	ImageCenterFocusWeak: require('./image/center-focus-weak'),
-	ImageCollectionsBookmark: require('./image/collections-bookmark'),
-	ImageCollections: require('./image/collections'),
-	ImageColorLens: require('./image/color-lens'),
-	ImageColorize: require('./image/colorize'),
-	ImageCompare: require('./image/compare'),
-	ImageControlPointDuplicate: require('./image/control-point-duplicate'),
-	ImageControlPoint: require('./image/control-point'),
-	ImageCrop169: require('./image/crop-16-9'),
-	ImageCrop32: require('./image/crop-3-2'),
-	ImageCrop54: require('./image/crop-5-4'),
-	ImageCrop75: require('./image/crop-7-5'),
-	ImageCropDin: require('./image/crop-din'),
-	ImageCropFree: require('./image/crop-free'),
-	ImageCropLandscape: require('./image/crop-landscape'),
-	ImageCropOriginal: require('./image/crop-original'),
-	ImageCropPortrait: require('./image/crop-portrait'),
-	ImageCropRotate: require('./image/crop-rotate'),
-	ImageCropSquare: require('./image/crop-square'),
-	ImageCrop: require('./image/crop'),
-	ImageDehaze: require('./image/dehaze'),
-	ImageDetails: require('./image/details'),
-	ImageEdit: require('./image/edit'),
-	ImageExposureNeg1: require('./image/exposure-neg-1'),
-	ImageExposureNeg2: require('./image/exposure-neg-2'),
-	ImageExposurePlus1: require('./image/exposure-plus-1'),
-	ImageExposurePlus2: require('./image/exposure-plus-2'),
-	ImageExposureZero: require('./image/exposure-zero'),
-	ImageExposure: require('./image/exposure'),
-	ImageFilter1: require('./image/filter-1'),
-	ImageFilter2: require('./image/filter-2'),
-	ImageFilter3: require('./image/filter-3'),
-	ImageFilter4: require('./image/filter-4'),
-	ImageFilter5: require('./image/filter-5'),
-	ImageFilter6: require('./image/filter-6'),
-	ImageFilter7: require('./image/filter-7'),
-	ImageFilter8: require('./image/filter-8'),
-	ImageFilter9Plus: require('./image/filter-9-plus'),
-	ImageFilter9: require('./image/filter-9'),
-	ImageFilterBAndW: require('./image/filter-b-and-w'),
-	ImageFilterCenterFocus: require('./image/filter-center-focus'),
-	ImageFilterDrama: require('./image/filter-drama'),
-	ImageFilterFrames: require('./image/filter-frames'),
-	ImageFilterHdr: require('./image/filter-hdr'),
-	ImageFilterNone: require('./image/filter-none'),
-	ImageFilterTiltShift: require('./image/filter-tilt-shift'),
-	ImageFilterVintage: require('./image/filter-vintage'),
-	ImageFilter: require('./image/filter'),
-	ImageFlare: require('./image/flare'),
-	ImageFlashAuto: require('./image/flash-auto'),
-	ImageFlashOff: require('./image/flash-off'),
-	ImageFlashOn: require('./image/flash-on'),
-	ImageFlip: require('./image/flip'),
-	ImageGradient: require('./image/gradient'),
-	ImageGrain: require('./image/grain'),
-	ImageGridOff: require('./image/grid-off'),
-	ImageGridOn: require('./image/grid-on'),
-	ImageHdrOff: require('./image/hdr-off'),
-	ImageHdrOn: require('./image/hdr-on'),
-	ImageHdrStrong: require('./image/hdr-strong'),
-	ImageHdrWeak: require('./image/hdr-weak'),
-	ImageHealing: require('./image/healing'),
-	ImageImageAspectRatio: require('./image/image-aspect-ratio'),
-	ImageImage: require('./image/image'),
-	ImageIso: require('./image/iso'),
-	ImageLandscape: require('./image/landscape'),
-	ImageLeakAdd: require('./image/leak-add'),
-	ImageLeakRemove: require('./image/leak-remove'),
-	ImageLens: require('./image/lens'),
-	ImageLinkedCamera: require('./image/linked-camera'),
-	ImageLooks3: require('./image/looks-3'),
-	ImageLooks4: require('./image/looks-4'),
-	ImageLooks5: require('./image/looks-5'),
-	ImageLooks6: require('./image/looks-6'),
-	ImageLooksOne: require('./image/looks-one'),
-	ImageLooksTwo: require('./image/looks-two'),
-	ImageLooks: require('./image/looks'),
-	ImageLoupe: require('./image/loupe'),
-	ImageMonochromePhotos: require('./image/monochrome-photos'),
-	ImageMovieCreation: require('./image/movie-creation'),
-	ImageMovieFilter: require('./image/movie-filter'),
-	ImageMusicNote: require('./image/music-note'),
-	ImageNaturePeople: require('./image/nature-people'),
-	ImageNature: require('./image/nature'),
-	ImageNavigateBefore: require('./image/navigate-before'),
-	ImageNavigateNext: require('./image/navigate-next'),
-	ImagePalette: require('./image/palette'),
-	ImagePanoramaFishEye: require('./image/panorama-fish-eye'),
-	ImagePanoramaHorizontal: require('./image/panorama-horizontal'),
-	ImagePanoramaVertical: require('./image/panorama-vertical'),
-	ImagePanoramaWideAngle: require('./image/panorama-wide-angle'),
-	ImagePanorama: require('./image/panorama'),
-	ImagePhotoAlbum: require('./image/photo-album'),
-	ImagePhotoCamera: require('./image/photo-camera'),
-	ImagePhotoFilter: require('./image/photo-filter'),
-	ImagePhotoLibrary: require('./image/photo-library'),
-	ImagePhotoSizeSelectActual: require('./image/photo-size-select-actual'),
-	ImagePhotoSizeSelectLarge: require('./image/photo-size-select-large'),
-	ImagePhotoSizeSelectSmall: require('./image/photo-size-select-small'),
-	ImagePhoto: require('./image/photo'),
-	ImagePictureAsPdf: require('./image/picture-as-pdf'),
-	ImagePortrait: require('./image/portrait'),
-	ImageRemoveRedEye: require('./image/remove-red-eye'),
-	ImageRotate90DegreesCcw: require('./image/rotate-90-degrees-ccw'),
-	ImageRotateLeft: require('./image/rotate-left'),
-	ImageRotateRight: require('./image/rotate-right'),
-	ImageSlideshow: require('./image/slideshow'),
-	ImageStraighten: require('./image/straighten'),
-	ImageStyle: require('./image/style'),
-	ImageSwitchCamera: require('./image/switch-camera'),
-	ImageSwitchVideo: require('./image/switch-video'),
-	ImageTagFaces: require('./image/tag-faces'),
-	ImageTexture: require('./image/texture'),
-	ImageTimelapse: require('./image/timelapse'),
-	ImageTimer10: require('./image/timer-10'),
-	ImageTimer3: require('./image/timer-3'),
-	ImageTimerOff: require('./image/timer-off'),
-	ImageTimer: require('./image/timer'),
-	ImageTonality: require('./image/tonality'),
-	ImageTransform: require('./image/transform'),
-	ImageTune: require('./image/tune'),
-	ImageViewComfy: require('./image/view-comfy'),
-	ImageViewCompact: require('./image/view-compact'),
-	ImageVignette: require('./image/vignette'),
-	ImageWbAuto: require('./image/wb-auto'),
-	ImageWbCloudy: require('./image/wb-cloudy'),
-	ImageWbIncandescent: require('./image/wb-incandescent'),
-	ImageWbIridescent: require('./image/wb-iridescent'),
-	ImageWbSunny: require('./image/wb-sunny'),
-	MapsAddLocation: require('./maps/add-location'),
-	MapsBeenhere: require('./maps/beenhere'),
-	MapsDirectionsBike: require('./maps/directions-bike'),
-	MapsDirectionsBoat: require('./maps/directions-boat'),
-	MapsDirectionsBus: require('./maps/directions-bus'),
-	MapsDirectionsCar: require('./maps/directions-car'),
-	MapsDirectionsRailway: require('./maps/directions-railway'),
-	MapsDirectionsRun: require('./maps/directions-run'),
-	MapsDirectionsSubway: require('./maps/directions-subway'),
-	MapsDirectionsTransit: require('./maps/directions-transit'),
-	MapsDirectionsWalk: require('./maps/directions-walk'),
-	MapsDirections: require('./maps/directions'),
-	MapsEditLocation: require('./maps/edit-location'),
-	MapsFlight: require('./maps/flight'),
-	MapsHotel: require('./maps/hotel'),
-	MapsLayersClear: require('./maps/layers-clear'),
-	MapsLayers: require('./maps/layers'),
-	MapsLocalActivity: require('./maps/local-activity'),
-	MapsLocalAirport: require('./maps/local-airport'),
-	MapsLocalAtm: require('./maps/local-atm'),
-	MapsLocalBar: require('./maps/local-bar'),
-	MapsLocalCafe: require('./maps/local-cafe'),
-	MapsLocalCarWash: require('./maps/local-car-wash'),
-	MapsLocalConvenienceStore: require('./maps/local-convenience-store'),
-	MapsLocalDining: require('./maps/local-dining'),
-	MapsLocalDrink: require('./maps/local-drink'),
-	MapsLocalFlorist: require('./maps/local-florist'),
-	MapsLocalGasStation: require('./maps/local-gas-station'),
-	MapsLocalGroceryStore: require('./maps/local-grocery-store'),
-	MapsLocalHospital: require('./maps/local-hospital'),
-	MapsLocalHotel: require('./maps/local-hotel'),
-	MapsLocalLaundryService: require('./maps/local-laundry-service'),
-	MapsLocalLibrary: require('./maps/local-library'),
-	MapsLocalMall: require('./maps/local-mall'),
-	MapsLocalMovies: require('./maps/local-movies'),
-	MapsLocalOffer: require('./maps/local-offer'),
-	MapsLocalParking: require('./maps/local-parking'),
-	MapsLocalPharmacy: require('./maps/local-pharmacy'),
-	MapsLocalPhone: require('./maps/local-phone'),
-	MapsLocalPizza: require('./maps/local-pizza'),
-	MapsLocalPlay: require('./maps/local-play'),
-	MapsLocalPostOffice: require('./maps/local-post-office'),
-	MapsLocalPrintshop: require('./maps/local-printshop'),
-	MapsLocalSee: require('./maps/local-see'),
-	MapsLocalShipping: require('./maps/local-shipping'),
-	MapsLocalTaxi: require('./maps/local-taxi'),
-	MapsMap: require('./maps/map'),
-	MapsMyLocation: require('./maps/my-location'),
-	MapsNavigation: require('./maps/navigation'),
-	MapsNearMe: require('./maps/near-me'),
-	MapsPersonPinCircle: require('./maps/person-pin-circle'),
-	MapsPersonPin: require('./maps/person-pin'),
-	MapsPinDrop: require('./maps/pin-drop'),
-	MapsPlace: require('./maps/place'),
-	MapsRateReview: require('./maps/rate-review'),
-	MapsRestaurantMenu: require('./maps/restaurant-menu'),
-	MapsSatellite: require('./maps/satellite'),
-	MapsStoreMallDirectory: require('./maps/store-mall-directory'),
-	MapsTerrain: require('./maps/terrain'),
-	MapsTraffic: require('./maps/traffic'),
-	MapsZoomOutMap: require('./maps/zoom-out-map'),
-	NavigationApps: require('./navigation/apps'),
-	NavigationArrowBack: require('./navigation/arrow-back'),
-	NavigationArrowDownward: require('./navigation/arrow-downward'),
-	NavigationArrowDropDownCircle: require('./navigation/arrow-drop-down-circle'),
-	NavigationArrowDropDown: require('./navigation/arrow-drop-down'),
-	NavigationArrowDropUp: require('./navigation/arrow-drop-up'),
-	NavigationArrowForward: require('./navigation/arrow-forward'),
-	NavigationArrowUpward: require('./navigation/arrow-upward'),
-	NavigationCancel: require('./navigation/cancel'),
-	NavigationCheck: require('./navigation/check'),
-	NavigationChevronLeft: require('./navigation/chevron-left'),
-	NavigationChevronRight: require('./navigation/chevron-right'),
-	NavigationClose: require('./navigation/close'),
-	NavigationExpandLess: require('./navigation/expand-less'),
-	NavigationExpandMore: require('./navigation/expand-more'),
-	NavigationFullscreenExit: require('./navigation/fullscreen-exit'),
-	NavigationFullscreen: require('./navigation/fullscreen'),
-	NavigationMenu: require('./navigation/menu'),
-	NavigationMoreHoriz: require('./navigation/more-horiz'),
-	NavigationMoreVert: require('./navigation/more-vert'),
-	NavigationRefresh: require('./navigation/refresh'),
-	NavigationSubdirectoryArrowLeft: require('./navigation/subdirectory-arrow-left'),
-	NavigationSubdirectoryArrowRight: require('./navigation/subdirectory-arrow-right'),
-	NavigationUnfoldLess: require('./navigation/unfold-less'),
-	NavigationUnfoldMore: require('./navigation/unfold-more'),
-	NavigationArrowDropRight: require('./navigation-arrow-drop-right'),
-	NotificationAdb: require('./notification/adb'),
-	NotificationAirlineSeatFlatAngled: require('./notification/airline-seat-flat-angled'),
-	NotificationAirlineSeatFlat: require('./notification/airline-seat-flat'),
-	NotificationAirlineSeatIndividualSuite: require('./notification/airline-seat-individual-suite'),
-	NotificationAirlineSeatLegroomExtra: require('./notification/airline-seat-legroom-extra'),
-	NotificationAirlineSeatLegroomNormal: require('./notification/airline-seat-legroom-normal'),
-	NotificationAirlineSeatLegroomReduced: require('./notification/airline-seat-legroom-reduced'),
-	NotificationAirlineSeatReclineExtra: require('./notification/airline-seat-recline-extra'),
-	NotificationAirlineSeatReclineNormal: require('./notification/airline-seat-recline-normal'),
-	NotificationBluetoothAudio: require('./notification/bluetooth-audio'),
-	NotificationConfirmationNumber: require('./notification/confirmation-number'),
-	NotificationDiscFull: require('./notification/disc-full'),
-	NotificationDoNotDisturbAlt: require('./notification/do-not-disturb-alt'),
-	NotificationDoNotDisturb: require('./notification/do-not-disturb'),
-	NotificationDriveEta: require('./notification/drive-eta'),
-	NotificationEnhancedEncryption: require('./notification/enhanced-encryption'),
-	NotificationEventAvailable: require('./notification/event-available'),
-	NotificationEventBusy: require('./notification/event-busy'),
-	NotificationEventNote: require('./notification/event-note'),
-	NotificationFolderSpecial: require('./notification/folder-special'),
-	NotificationLiveTv: require('./notification/live-tv'),
-	NotificationMms: require('./notification/mms'),
-	NotificationMore: require('./notification/more'),
-	NotificationNetworkCheck: require('./notification/network-check'),
-	NotificationNetworkLocked: require('./notification/network-locked'),
-	NotificationNoEncryption: require('./notification/no-encryption'),
-	NotificationOndemandVideo: require('./notification/ondemand-video'),
-	NotificationPersonalVideo: require('./notification/personal-video'),
-	NotificationPhoneBluetoothSpeaker: require('./notification/phone-bluetooth-speaker'),
-	NotificationPhoneForwarded: require('./notification/phone-forwarded'),
-	NotificationPhoneInTalk: require('./notification/phone-in-talk'),
-	NotificationPhoneLocked: require('./notification/phone-locked'),
-	NotificationPhoneMissed: require('./notification/phone-missed'),
-	NotificationPhonePaused: require('./notification/phone-paused'),
-	NotificationPower: require('./notification/power'),
-	NotificationRvHookup: require('./notification/rv-hookup'),
-	NotificationSdCard: require('./notification/sd-card'),
-	NotificationSimCardAlert: require('./notification/sim-card-alert'),
-	NotificationSmsFailed: require('./notification/sms-failed'),
-	NotificationSms: require('./notification/sms'),
-	NotificationSyncDisabled: require('./notification/sync-disabled'),
-	NotificationSyncProblem: require('./notification/sync-problem'),
-	NotificationSync: require('./notification/sync'),
-	NotificationSystemUpdate: require('./notification/system-update'),
-	NotificationTapAndPlay: require('./notification/tap-and-play'),
-	NotificationTimeToLeave: require('./notification/time-to-leave'),
-	NotificationVibration: require('./notification/vibration'),
-	NotificationVoiceChat: require('./notification/voice-chat'),
-	NotificationVpnLock: require('./notification/vpn-lock'),
-	NotificationWc: require('./notification/wc'),
-	NotificationWifi: require('./notification/wifi'),
-	PlacesAcUnit: require('./places/ac-unit'),
-	PlacesAirportShuttle: require('./places/airport-shuttle'),
-	PlacesAllInclusive: require('./places/all-inclusive'),
-	PlacesBeachAccess: require('./places/beach-access'),
-	PlacesBusinessCenter: require('./places/business-center'),
-	PlacesCasino: require('./places/casino'),
-	PlacesChildCare: require('./places/child-care'),
-	PlacesChildFriendly: require('./places/child-friendly'),
-	PlacesFitnessCenter: require('./places/fitness-center'),
-	PlacesFreeBreakfast: require('./places/free-breakfast'),
-	PlacesGolfCourse: require('./places/golf-course'),
-	PlacesHotTub: require('./places/hot-tub'),
-	PlacesKitchen: require('./places/kitchen'),
-	PlacesPool: require('./places/pool'),
-	PlacesRoomService: require('./places/room-service'),
-	PlacesSmokeFree: require('./places/smoke-free'),
-	PlacesSmokingRooms: require('./places/smoking-rooms'),
-	PlacesSpa: require('./places/spa'),
-	SocialCake: require('./social/cake'),
-	SocialDomain: require('./social/domain'),
-	SocialGroupAdd: require('./social/group-add'),
-	SocialGroup: require('./social/group'),
-	SocialLocationCity: require('./social/location-city'),
-	SocialMoodBad: require('./social/mood-bad'),
-	SocialMood: require('./social/mood'),
-	SocialNotificationsActive: require('./social/notifications-active'),
-	SocialNotificationsNone: require('./social/notifications-none'),
-	SocialNotificationsOff: require('./social/notifications-off'),
-	SocialNotificationsPaused: require('./social/notifications-paused'),
-	SocialNotifications: require('./social/notifications'),
-	SocialPages: require('./social/pages'),
-	SocialPartyMode: require('./social/party-mode'),
-	SocialPeopleOutline: require('./social/people-outline'),
-	SocialPeople: require('./social/people'),
-	SocialPersonAdd: require('./social/person-add'),
-	SocialPersonOutline: require('./social/person-outline'),
-	SocialPerson: require('./social/person'),
-	SocialPlusOne: require('./social/plus-one'),
-	SocialPoll: require('./social/poll'),
-	SocialPublic: require('./social/public'),
-	SocialSchool: require('./social/school'),
-	SocialShare: require('./social/share'),
-	SocialWhatshot: require('./social/whatshot'),
-	ToggleCheckBoxOutlineBlank: require('./toggle/check-box-outline-blank'),
-	ToggleCheckBox: require('./toggle/check-box'),
-	ToggleIndeterminateCheckBox: require('./toggle/indeterminate-check-box'),
-	ToggleRadioButtonChecked: require('./toggle/radio-button-checked'),
-	ToggleRadioButtonUnchecked: require('./toggle/radio-button-unchecked'),
-	ToggleStarBorder: require('./toggle/star-border'),
-	ToggleStarHalf: require('./toggle/star-half'),
-	ToggleStar: require('./toggle/star'),
-
-};
+export ActionAccessibility from './action/accessibility';
+export ActionAccessible from './action/accessible';
+export ActionAccountBalanceWallet from './action/account-balance-wallet';
+export ActionAccountBalance from './action/account-balance';
+export ActionAccountBox from './action/account-box';
+export ActionAccountCircle from './action/account-circle';
+export ActionAddShoppingCart from './action/add-shopping-cart';
+export ActionAlarmAdd from './action/alarm-add';
+export ActionAlarmOff from './action/alarm-off';
+export ActionAlarmOn from './action/alarm-on';
+export ActionAlarm from './action/alarm';
+export ActionAllOut from './action/all-out';
+export ActionAndroid from './action/android';
+export ActionAnnouncement from './action/announcement';
+export ActionAspectRatio from './action/aspect-ratio';
+export ActionAssessment from './action/assessment';
+export ActionAssignmentInd from './action/assignment-ind';
+export ActionAssignmentLate from './action/assignment-late';
+export ActionAssignmentReturn from './action/assignment-return';
+export ActionAssignmentReturned from './action/assignment-returned';
+export ActionAssignmentTurnedIn from './action/assignment-turned-in';
+export ActionAssignment from './action/assignment';
+export ActionAutorenew from './action/autorenew';
+export ActionBackup from './action/backup';
+export ActionBook from './action/book';
+export ActionBookmarkBorder from './action/bookmark-border';
+export ActionBookmark from './action/bookmark';
+export ActionBugReport from './action/bug-report';
+export ActionBuild from './action/build';
+export ActionCached from './action/cached';
+export ActionCameraEnhance from './action/camera-enhance';
+export ActionCardGiftcard from './action/card-giftcard';
+export ActionCardMembership from './action/card-membership';
+export ActionCardTravel from './action/card-travel';
+export ActionChangeHistory from './action/change-history';
+export ActionCheckCircle from './action/check-circle';
+export ActionChromeReaderMode from './action/chrome-reader-mode';
+export ActionClass from './action/class';
+export ActionCode from './action/code';
+export ActionCompareArrows from './action/compare-arrows';
+export ActionCopyright from './action/copyright';
+export ActionCreditCard from './action/credit-card';
+export ActionDashboard from './action/dashboard';
+export ActionDateRange from './action/date-range';
+export ActionDelete from './action/delete';
+export ActionDescription from './action/description';
+export ActionDns from './action/dns';
+export ActionDoneAll from './action/done-all';
+export ActionDone from './action/done';
+export ActionDonutLarge from './action/donut-large';
+export ActionDonutSmall from './action/donut-small';
+export ActionEject from './action/eject';
+export ActionEventSeat from './action/event-seat';
+export ActionEvent from './action/event';
+export ActionExitToApp from './action/exit-to-app';
+export ActionExplore from './action/explore';
+export ActionExtension from './action/extension';
+export ActionFace from './action/face';
+export ActionFavoriteBorder from './action/favorite-border';
+export ActionFavorite from './action/favorite';
+export ActionFeedback from './action/feedback';
+export ActionFindInPage from './action/find-in-page';
+export ActionFindReplace from './action/find-replace';
+export ActionFingerprint from './action/fingerprint';
+export ActionFlightLand from './action/flight-land';
+export ActionFlightTakeoff from './action/flight-takeoff';
+export ActionFlipToBack from './action/flip-to-back';
+export ActionFlipToFront from './action/flip-to-front';
+export ActionGavel from './action/gavel';
+export ActionGetApp from './action/get-app';
+export ActionGif from './action/gif';
+export ActionGrade from './action/grade';
+export ActionGroupWork from './action/group-work';
+export ActionHelpOutline from './action/help-outline';
+export ActionHelp from './action/help';
+export ActionHighlightOff from './action/highlight-off';
+export ActionHistory from './action/history';
+export ActionHome from './action/home';
+export ActionHourglassEmpty from './action/hourglass-empty';
+export ActionHourglassFull from './action/hourglass-full';
+export ActionHttp from './action/http';
+export ActionHttps from './action/https';
+export ActionImportantDevices from './action/important-devices';
+export ActionInfoOutline from './action/info-outline';
+export ActionInfo from './action/info';
+export ActionInput from './action/input';
+export ActionInvertColors from './action/invert-colors';
+export ActionLabelOutline from './action/label-outline';
+export ActionLabel from './action/label';
+export ActionLanguage from './action/language';
+export ActionLaunch from './action/launch';
+export ActionLightbulbOutline from './action/lightbulb-outline';
+export ActionLineStyle from './action/line-style';
+export ActionLineWeight from './action/line-weight';
+export ActionList from './action/list';
+export ActionLockOpen from './action/lock-open';
+export ActionLockOutline from './action/lock-outline';
+export ActionLock from './action/lock';
+export ActionLoyalty from './action/loyalty';
+export ActionMarkunreadMailbox from './action/markunread-mailbox';
+export ActionMotorcycle from './action/motorcycle';
+export ActionNoteAdd from './action/note-add';
+export ActionOfflinePin from './action/offline-pin';
+export ActionOpacity from './action/opacity';
+export ActionOpenInBrowser from './action/open-in-browser';
+export ActionOpenInNew from './action/open-in-new';
+export ActionOpenWith from './action/open-with';
+export ActionPageview from './action/pageview';
+export ActionPanTool from './action/pan-tool';
+export ActionPayment from './action/payment';
+export ActionPermCameraMic from './action/perm-camera-mic';
+export ActionPermContactCalendar from './action/perm-contact-calendar';
+export ActionPermDataSetting from './action/perm-data-setting';
+export ActionPermDeviceInformation from './action/perm-device-information';
+export ActionPermIdentity from './action/perm-identity';
+export ActionPermMedia from './action/perm-media';
+export ActionPermPhoneMsg from './action/perm-phone-msg';
+export ActionPermScanWifi from './action/perm-scan-wifi';
+export ActionPets from './action/pets';
+export ActionPictureInPictureAlt from './action/picture-in-picture-alt';
+export ActionPictureInPicture from './action/picture-in-picture';
+export ActionPlayForWork from './action/play-for-work';
+export ActionPolymer from './action/polymer';
+export ActionPowerSettingsNew from './action/power-settings-new';
+export ActionPregnantWoman from './action/pregnant-woman';
+export ActionPrint from './action/print';
+export ActionQueryBuilder from './action/query-builder';
+export ActionQuestionAnswer from './action/question-answer';
+export ActionReceipt from './action/receipt';
+export ActionRecordVoiceOver from './action/record-voice-over';
+export ActionRedeem from './action/redeem';
+export ActionReorder from './action/reorder';
+export ActionReportProblem from './action/report-problem';
+export ActionRestore from './action/restore';
+export ActionRoom from './action/room';
+export ActionRoundedCorner from './action/rounded-corner';
+export ActionRowing from './action/rowing';
+export ActionSchedule from './action/schedule';
+export ActionSearch from './action/search';
+export ActionSettingsApplications from './action/settings-applications';
+export ActionSettingsBackupRestore from './action/settings-backup-restore';
+export ActionSettingsBluetooth from './action/settings-bluetooth';
+export ActionSettingsBrightness from './action/settings-brightness';
+export ActionSettingsCell from './action/settings-cell';
+export ActionSettingsEthernet from './action/settings-ethernet';
+export ActionSettingsInputAntenna from './action/settings-input-antenna';
+export ActionSettingsInputComponent from './action/settings-input-component';
+export ActionSettingsInputComposite from './action/settings-input-composite';
+export ActionSettingsInputHdmi from './action/settings-input-hdmi';
+export ActionSettingsInputSvideo from './action/settings-input-svideo';
+export ActionSettingsOverscan from './action/settings-overscan';
+export ActionSettingsPhone from './action/settings-phone';
+export ActionSettingsPower from './action/settings-power';
+export ActionSettingsRemote from './action/settings-remote';
+export ActionSettingsVoice from './action/settings-voice';
+export ActionSettings from './action/settings';
+export ActionShopTwo from './action/shop-two';
+export ActionShop from './action/shop';
+export ActionShoppingBasket from './action/shopping-basket';
+export ActionShoppingCart from './action/shopping-cart';
+export ActionSpeakerNotes from './action/speaker-notes';
+export ActionSpellcheck from './action/spellcheck';
+export ActionStars from './action/stars';
+export ActionStore from './action/store';
+export ActionSubject from './action/subject';
+export ActionSupervisorAccount from './action/supervisor-account';
+export ActionSwapHoriz from './action/swap-horiz';
+export ActionSwapVert from './action/swap-vert';
+export ActionSwapVerticalCircle from './action/swap-vertical-circle';
+export ActionSystemUpdateAlt from './action/system-update-alt';
+export ActionTabUnselected from './action/tab-unselected';
+export ActionTab from './action/tab';
+export ActionTheaters from './action/theaters';
+export ActionThreeDRotation from './action/three-d-rotation';
+export ActionThumbDown from './action/thumb-down';
+export ActionThumbUp from './action/thumb-up';
+export ActionThumbsUpDown from './action/thumbs-up-down';
+export ActionTimeline from './action/timeline';
+export ActionToc from './action/toc';
+export ActionToday from './action/today';
+export ActionToll from './action/toll';
+export ActionTouchApp from './action/touch-app';
+export ActionTrackChanges from './action/track-changes';
+export ActionTranslate from './action/translate';
+export ActionTrendingDown from './action/trending-down';
+export ActionTrendingFlat from './action/trending-flat';
+export ActionTrendingUp from './action/trending-up';
+export ActionTurnedInNot from './action/turned-in-not';
+export ActionTurnedIn from './action/turned-in';
+export ActionUpdate from './action/update';
+export ActionVerifiedUser from './action/verified-user';
+export ActionViewAgenda from './action/view-agenda';
+export ActionViewArray from './action/view-array';
+export ActionViewCarousel from './action/view-carousel';
+export ActionViewColumn from './action/view-column';
+export ActionViewDay from './action/view-day';
+export ActionViewHeadline from './action/view-headline';
+export ActionViewList from './action/view-list';
+export ActionViewModule from './action/view-module';
+export ActionViewQuilt from './action/view-quilt';
+export ActionViewStream from './action/view-stream';
+export ActionViewWeek from './action/view-week';
+export ActionVisibilityOff from './action/visibility-off';
+export ActionVisibility from './action/visibility';
+export ActionWatchLater from './action/watch-later';
+export ActionWork from './action/work';
+export ActionYoutubeSearchedFor from './action/youtube-searched-for';
+export ActionZoomIn from './action/zoom-in';
+export ActionZoomOut from './action/zoom-out';
+export AlertAddAlert from './alert/add-alert';
+export AlertErrorOutline from './alert/error-outline';
+export AlertError from './alert/error';
+export AlertWarning from './alert/warning';
+export AvAddToQueue from './av/add-to-queue';
+export AvAirplay from './av/airplay';
+export AvAlbum from './av/album';
+export AvArtTrack from './av/art-track';
+export AvAvTimer from './av/av-timer';
+export AvClosedCaption from './av/closed-caption';
+export AvEqualizer from './av/equalizer';
+export AvExplicit from './av/explicit';
+export AvFastForward from './av/fast-forward';
+export AvFastRewind from './av/fast-rewind';
+export AvFiberDvr from './av/fiber-dvr';
+export AvFiberManualRecord from './av/fiber-manual-record';
+export AvFiberNew from './av/fiber-new';
+export AvFiberPin from './av/fiber-pin';
+export AvFiberSmartRecord from './av/fiber-smart-record';
+export AvForward10 from './av/forward-10';
+export AvForward30 from './av/forward-30';
+export AvForward5 from './av/forward-5';
+export AvGames from './av/games';
+export AvHd from './av/hd';
+export AvHearing from './av/hearing';
+export AvHighQuality from './av/high-quality';
+export AvLibraryAdd from './av/library-add';
+export AvLibraryBooks from './av/library-books';
+export AvLibraryMusic from './av/library-music';
+export AvLoop from './av/loop';
+export AvMicNone from './av/mic-none';
+export AvMicOff from './av/mic-off';
+export AvMic from './av/mic';
+export AvMovie from './av/movie';
+export AvMusicVideo from './av/music-video';
+export AvNewReleases from './av/new-releases';
+export AvNotInterested from './av/not-interested';
+export AvPauseCircleFilled from './av/pause-circle-filled';
+export AvPauseCircleOutline from './av/pause-circle-outline';
+export AvPause from './av/pause';
+export AvPlayArrow from './av/play-arrow';
+export AvPlayCircleFilled from './av/play-circle-filled';
+export AvPlayCircleOutline from './av/play-circle-outline';
+export AvPlaylistAddCheck from './av/playlist-add-check';
+export AvPlaylistAdd from './av/playlist-add';
+export AvPlaylistPlay from './av/playlist-play';
+export AvQueueMusic from './av/queue-music';
+export AvQueuePlayNext from './av/queue-play-next';
+export AvQueue from './av/queue';
+export AvRadio from './av/radio';
+export AvRecentActors from './av/recent-actors';
+export AvRemoveFromQueue from './av/remove-from-queue';
+export AvRepeatOne from './av/repeat-one';
+export AvRepeat from './av/repeat';
+export AvReplay10 from './av/replay-10';
+export AvReplay30 from './av/replay-30';
+export AvReplay5 from './av/replay-5';
+export AvReplay from './av/replay';
+export AvShuffle from './av/shuffle';
+export AvSkipNext from './av/skip-next';
+export AvSkipPrevious from './av/skip-previous';
+export AvSlowMotionVideo from './av/slow-motion-video';
+export AvSnooze from './av/snooze';
+export AvSortByAlpha from './av/sort-by-alpha';
+export AvStop from './av/stop';
+export AvSubscriptions from './av/subscriptions';
+export AvSubtitles from './av/subtitles';
+export AvSurroundSound from './av/surround-sound';
+export AvVideoLibrary from './av/video-library';
+export AvVideocamOff from './av/videocam-off';
+export AvVideocam from './av/videocam';
+export AvVolumeDown from './av/volume-down';
+export AvVolumeMute from './av/volume-mute';
+export AvVolumeOff from './av/volume-off';
+export AvVolumeUp from './av/volume-up';
+export AvWebAsset from './av/web-asset';
+export AvWeb from './av/web';
+export CommunicationBusiness from './communication/business';
+export CommunicationCallEnd from './communication/call-end';
+export CommunicationCallMade from './communication/call-made';
+export CommunicationCallMerge from './communication/call-merge';
+export CommunicationCallMissedOutgoing from './communication/call-missed-outgoing';
+export CommunicationCallMissed from './communication/call-missed';
+export CommunicationCallReceived from './communication/call-received';
+export CommunicationCallSplit from './communication/call-split';
+export CommunicationCall from './communication/call';
+export CommunicationChatBubbleOutline from './communication/chat-bubble-outline';
+export CommunicationChatBubble from './communication/chat-bubble';
+export CommunicationChat from './communication/chat';
+export CommunicationClearAll from './communication/clear-all';
+export CommunicationComment from './communication/comment';
+export CommunicationContactMail from './communication/contact-mail';
+export CommunicationContactPhone from './communication/contact-phone';
+export CommunicationContacts from './communication/contacts';
+export CommunicationDialerSip from './communication/dialer-sip';
+export CommunicationDialpad from './communication/dialpad';
+export CommunicationEmail from './communication/email';
+export CommunicationForum from './communication/forum';
+export CommunicationImportContacts from './communication/import-contacts';
+export CommunicationImportExport from './communication/import-export';
+export CommunicationInvertColorsOff from './communication/invert-colors-off';
+export CommunicationLiveHelp from './communication/live-help';
+export CommunicationLocationOff from './communication/location-off';
+export CommunicationLocationOn from './communication/location-on';
+export CommunicationMailOutline from './communication/mail-outline';
+export CommunicationMessage from './communication/message';
+export CommunicationNoSim from './communication/no-sim';
+export CommunicationPhone from './communication/phone';
+export CommunicationPhonelinkErase from './communication/phonelink-erase';
+export CommunicationPhonelinkLock from './communication/phonelink-lock';
+export CommunicationPhonelinkRing from './communication/phonelink-ring';
+export CommunicationPhonelinkSetup from './communication/phonelink-setup';
+export CommunicationPortableWifiOff from './communication/portable-wifi-off';
+export CommunicationPresentToAll from './communication/present-to-all';
+export CommunicationRingVolume from './communication/ring-volume';
+export CommunicationScreenShare from './communication/screen-share';
+export CommunicationSpeakerPhone from './communication/speaker-phone';
+export CommunicationStayCurrentLandscape from './communication/stay-current-landscape';
+export CommunicationStayCurrentPortrait from './communication/stay-current-portrait';
+export CommunicationStayPrimaryLandscape from './communication/stay-primary-landscape';
+export CommunicationStayPrimaryPortrait from './communication/stay-primary-portrait';
+export CommunicationStopScreenShare from './communication/stop-screen-share';
+export CommunicationSwapCalls from './communication/swap-calls';
+export CommunicationTactMail from './communication/tact-mail';
+export CommunicationTextsms from './communication/textsms';
+export CommunicationVoicemail from './communication/voicemail';
+export CommunicationVpnKey from './communication/vpn-key';
+export ContentAddBox from './content/add-box';
+export ContentAddCircleOutline from './content/add-circle-outline';
+export ContentAddCircle from './content/add-circle';
+export ContentAdd from './content/add';
+export ContentArchive from './content/archive';
+export ContentBackspace from './content/backspace';
+export ContentBlock from './content/block';
+export ContentClear from './content/clear';
+export ContentContentCopy from './content/content-copy';
+export ContentContentCut from './content/content-cut';
+export ContentContentPaste from './content/content-paste';
+export ContentCreate from './content/create';
+export ContentDrafts from './content/drafts';
+export ContentFilterList from './content/filter-list';
+export ContentFlag from './content/flag';
+export ContentFontDownload from './content/font-download';
+export ContentForward from './content/forward';
+export ContentGesture from './content/gesture';
+export ContentInbox from './content/inbox';
+export ContentLink from './content/link';
+export ContentMail from './content/mail';
+export ContentMarkunread from './content/markunread';
+export ContentMoveToInbox from './content/move-to-inbox';
+export ContentNextWeek from './content/next-week';
+export ContentRedo from './content/redo';
+export ContentRemoveCircleOutline from './content/remove-circle-outline';
+export ContentRemoveCircle from './content/remove-circle';
+export ContentRemove from './content/remove';
+export ContentReplyAll from './content/reply-all';
+export ContentReply from './content/reply';
+export ContentReport from './content/report';
+export ContentSave from './content/save';
+export ContentSelectAll from './content/select-all';
+export ContentSend from './content/send';
+export ContentSort from './content/sort';
+export ContentTextFormat from './content/text-format';
+export ContentUnarchive from './content/unarchive';
+export ContentUndo from './content/undo';
+export ContentWeekend from './content/weekend';
+export DeviceAccessAlarm from './device/access-alarm';
+export DeviceAccessAlarms from './device/access-alarms';
+export DeviceAccessTime from './device/access-time';
+export DeviceAddAlarm from './device/add-alarm';
+export DeviceAirplanemodeActive from './device/airplanemode-active';
+export DeviceAirplanemodeInactive from './device/airplanemode-inactive';
+export DeviceBattery20 from './device/battery-20';
+export DeviceBattery30 from './device/battery-30';
+export DeviceBattery50 from './device/battery-50';
+export DeviceBattery60 from './device/battery-60';
+export DeviceBattery80 from './device/battery-80';
+export DeviceBattery90 from './device/battery-90';
+export DeviceBatteryAlert from './device/battery-alert';
+export DeviceBatteryCharging20 from './device/battery-charging-20';
+export DeviceBatteryCharging30 from './device/battery-charging-30';
+export DeviceBatteryCharging50 from './device/battery-charging-50';
+export DeviceBatteryCharging60 from './device/battery-charging-60';
+export DeviceBatteryCharging80 from './device/battery-charging-80';
+export DeviceBatteryCharging90 from './device/battery-charging-90';
+export DeviceBatteryChargingFull from './device/battery-charging-full';
+export DeviceBatteryFull from './device/battery-full';
+export DeviceBatteryStd from './device/battery-std';
+export DeviceBatteryUnknown from './device/battery-unknown';
+export DeviceBluetoothConnected from './device/bluetooth-connected';
+export DeviceBluetoothDisabled from './device/bluetooth-disabled';
+export DeviceBluetoothSearching from './device/bluetooth-searching';
+export DeviceBluetooth from './device/bluetooth';
+export DeviceBrightnessAuto from './device/brightness-auto';
+export DeviceBrightnessHigh from './device/brightness-high';
+export DeviceBrightnessLow from './device/brightness-low';
+export DeviceBrightnessMedium from './device/brightness-medium';
+export DeviceDataUsage from './device/data-usage';
+export DeviceDeveloperMode from './device/developer-mode';
+export DeviceDevices from './device/devices';
+export DeviceDvr from './device/dvr';
+export DeviceGpsFixed from './device/gps-fixed';
+export DeviceGpsNotFixed from './device/gps-not-fixed';
+export DeviceGpsOff from './device/gps-off';
+export DeviceGraphicEq from './device/graphic-eq';
+export DeviceLocationDisabled from './device/location-disabled';
+export DeviceLocationSearching from './device/location-searching';
+export DeviceNetworkCell from './device/network-cell';
+export DeviceNetworkWifi from './device/network-wifi';
+export DeviceNfc from './device/nfc';
+export DeviceScreenLockLandscape from './device/screen-lock-landscape';
+export DeviceScreenLockPortrait from './device/screen-lock-portrait';
+export DeviceScreenLockRotation from './device/screen-lock-rotation';
+export DeviceScreenRotation from './device/screen-rotation';
+export DeviceSdStorage from './device/sd-storage';
+export DeviceSettingsSystemDaydream from './device/settings-system-daydream';
+export DeviceSignalCellular0Bar from './device/signal-cellular-0-bar';
+export DeviceSignalCellular1Bar from './device/signal-cellular-1-bar';
+export DeviceSignalCellular2Bar from './device/signal-cellular-2-bar';
+export DeviceSignalCellular3Bar from './device/signal-cellular-3-bar';
+export DeviceSignalCellular4Bar from './device/signal-cellular-4-bar';
+export DeviceSignalCellularConnectedNoInternet0Bar from './device/signal-cellular-connected-no-internet-0-bar';
+export DeviceSignalCellularConnectedNoInternet1Bar from './device/signal-cellular-connected-no-internet-1-bar';
+export DeviceSignalCellularConnectedNoInternet2Bar from './device/signal-cellular-connected-no-internet-2-bar';
+export DeviceSignalCellularConnectedNoInternet3Bar from './device/signal-cellular-connected-no-internet-3-bar';
+export DeviceSignalCellularConnectedNoInternet4Bar from './device/signal-cellular-connected-no-internet-4-bar';
+export DeviceSignalCellularNoSim from './device/signal-cellular-no-sim';
+export DeviceSignalCellularNull from './device/signal-cellular-null';
+export DeviceSignalCellularOff from './device/signal-cellular-off';
+export DeviceSignalWifi0Bar from './device/signal-wifi-0-bar';
+export DeviceSignalWifi1BarLock from './device/signal-wifi-1-bar-lock';
+export DeviceSignalWifi1Bar from './device/signal-wifi-1-bar';
+export DeviceSignalWifi2BarLock from './device/signal-wifi-2-bar-lock';
+export DeviceSignalWifi2Bar from './device/signal-wifi-2-bar';
+export DeviceSignalWifi3BarLock from './device/signal-wifi-3-bar-lock';
+export DeviceSignalWifi3Bar from './device/signal-wifi-3-bar';
+export DeviceSignalWifi4BarLock from './device/signal-wifi-4-bar-lock';
+export DeviceSignalWifi4Bar from './device/signal-wifi-4-bar';
+export DeviceSignalWifiOff from './device/signal-wifi-off';
+export DeviceStorage from './device/storage';
+export DeviceUsb from './device/usb';
+export DeviceWallpaper from './device/wallpaper';
+export DeviceWidgets from './device/widgets';
+export DeviceWifiLock from './device/wifi-lock';
+export DeviceWifiTethering from './device/wifi-tethering';
+export EditorAttachFile from './editor/attach-file';
+export EditorAttachMoney from './editor/attach-money';
+export EditorBorderAll from './editor/border-all';
+export EditorBorderBottom from './editor/border-bottom';
+export EditorBorderClear from './editor/border-clear';
+export EditorBorderColor from './editor/border-color';
+export EditorBorderHorizontal from './editor/border-horizontal';
+export EditorBorderInner from './editor/border-inner';
+export EditorBorderLeft from './editor/border-left';
+export EditorBorderOuter from './editor/border-outer';
+export EditorBorderRight from './editor/border-right';
+export EditorBorderStyle from './editor/border-style';
+export EditorBorderTop from './editor/border-top';
+export EditorBorderVertical from './editor/border-vertical';
+export EditorDragHandle from './editor/drag-handle';
+export EditorFormatAlignCenter from './editor/format-align-center';
+export EditorFormatAlignJustify from './editor/format-align-justify';
+export EditorFormatAlignLeft from './editor/format-align-left';
+export EditorFormatAlignRight from './editor/format-align-right';
+export EditorFormatBold from './editor/format-bold';
+export EditorFormatClear from './editor/format-clear';
+export EditorFormatColorFill from './editor/format-color-fill';
+export EditorFormatColorReset from './editor/format-color-reset';
+export EditorFormatColorText from './editor/format-color-text';
+export EditorFormatIndentDecrease from './editor/format-indent-decrease';
+export EditorFormatIndentIncrease from './editor/format-indent-increase';
+export EditorFormatItalic from './editor/format-italic';
+export EditorFormatLineSpacing from './editor/format-line-spacing';
+export EditorFormatListBulleted from './editor/format-list-bulleted';
+export EditorFormatListNumbered from './editor/format-list-numbered';
+export EditorFormatPaint from './editor/format-paint';
+export EditorFormatQuote from './editor/format-quote';
+export EditorFormatShapes from './editor/format-shapes';
+export EditorFormatSize from './editor/format-size';
+export EditorFormatStrikethrough from './editor/format-strikethrough';
+export EditorFormatTextdirectionLToR from './editor/format-textdirection-l-to-r';
+export EditorFormatTextdirectionRToL from './editor/format-textdirection-r-to-l';
+export EditorFormatUnderlined from './editor/format-underlined';
+export EditorFunctions from './editor/functions';
+export EditorHighlight from './editor/highlight';
+export EditorInsertChart from './editor/insert-chart';
+export EditorInsertComment from './editor/insert-comment';
+export EditorInsertDriveFile from './editor/insert-drive-file';
+export EditorInsertEmoticon from './editor/insert-emoticon';
+export EditorInsertInvitation from './editor/insert-invitation';
+export EditorInsertLink from './editor/insert-link';
+export EditorInsertPhoto from './editor/insert-photo';
+export EditorLinearScale from './editor/linear-scale';
+export EditorMergeType from './editor/merge-type';
+export EditorModeComment from './editor/mode-comment';
+export EditorModeEdit from './editor/mode-edit';
+export EditorMoneyOff from './editor/money-off';
+export EditorPublish from './editor/publish';
+export EditorShortText from './editor/short-text';
+export EditorSpaceBar from './editor/space-bar';
+export EditorStrikethroughS from './editor/strikethrough-s';
+export EditorTextFields from './editor/text-fields';
+export EditorVerticalAlignBottom from './editor/vertical-align-bottom';
+export EditorVerticalAlignCenter from './editor/vertical-align-center';
+export EditorVerticalAlignTop from './editor/vertical-align-top';
+export EditorWrapText from './editor/wrap-text';
+export FileAttachment from './file/attachment';
+export FileCloudCircle from './file/cloud-circle';
+export FileCloudDone from './file/cloud-done';
+export FileCloudDownload from './file/cloud-download';
+export FileCloudOff from './file/cloud-off';
+export FileCloudQueue from './file/cloud-queue';
+export FileCloudUpload from './file/cloud-upload';
+export FileCloud from './file/cloud';
+export FileCreateNewFolder from './file/create-new-folder';
+export FileFileDownload from './file/file-download';
+export FileFileUpload from './file/file-upload';
+export FileFolderOpen from './file/folder-open';
+export FileFolderShared from './file/folder-shared';
+export FileFolder from './file/folder';
+export HardwareCastConnected from './hardware/cast-connected';
+export HardwareCast from './hardware/cast';
+export HardwareComputer from './hardware/computer';
+export HardwareDesktopMac from './hardware/desktop-mac';
+export HardwareDesktopWindows from './hardware/desktop-windows';
+export HardwareDeveloperBoard from './hardware/developer-board';
+export HardwareDeviceHub from './hardware/device-hub';
+export HardwareDevicesOther from './hardware/devices-other';
+export HardwareDock from './hardware/dock';
+export HardwareGamepad from './hardware/gamepad';
+export HardwareHeadsetMic from './hardware/headset-mic';
+export HardwareHeadset from './hardware/headset';
+export HardwareKeyboardArrowDown from './hardware/keyboard-arrow-down';
+export HardwareKeyboardArrowLeft from './hardware/keyboard-arrow-left';
+export HardwareKeyboardArrowRight from './hardware/keyboard-arrow-right';
+export HardwareKeyboardArrowUp from './hardware/keyboard-arrow-up';
+export HardwareKeyboardBackspace from './hardware/keyboard-backspace';
+export HardwareKeyboardCapslock from './hardware/keyboard-capslock';
+export HardwareKeyboardHide from './hardware/keyboard-hide';
+export HardwareKeyboardReturn from './hardware/keyboard-return';
+export HardwareKeyboardTab from './hardware/keyboard-tab';
+export HardwareKeyboardVoice from './hardware/keyboard-voice';
+export HardwareKeyboard from './hardware/keyboard';
+export HardwareLaptopChromebook from './hardware/laptop-chromebook';
+export HardwareLaptopMac from './hardware/laptop-mac';
+export HardwareLaptopWindows from './hardware/laptop-windows';
+export HardwareLaptop from './hardware/laptop';
+export HardwareMemory from './hardware/memory';
+export HardwareMouse from './hardware/mouse';
+export HardwarePhoneAndroid from './hardware/phone-android';
+export HardwarePhoneIphone from './hardware/phone-iphone';
+export HardwarePhonelinkOff from './hardware/phonelink-off';
+export HardwarePhonelink from './hardware/phonelink';
+export HardwarePowerInput from './hardware/power-input';
+export HardwareRouter from './hardware/router';
+export HardwareScanner from './hardware/scanner';
+export HardwareSecurity from './hardware/security';
+export HardwareSimCard from './hardware/sim-card';
+export HardwareSmartphone from './hardware/smartphone';
+export HardwareSpeakerGroup from './hardware/speaker-group';
+export HardwareSpeaker from './hardware/speaker';
+export HardwareTabletAndroid from './hardware/tablet-android';
+export HardwareTabletMac from './hardware/tablet-mac';
+export HardwareTablet from './hardware/tablet';
+export HardwareToys from './hardware/toys';
+export HardwareTv from './hardware/tv';
+export HardwareVideogameAsset from './hardware/videogame-asset';
+export HardwareWatch from './hardware/watch';
+export ImageAddAPhoto from './image/add-a-photo';
+export ImageAddToPhotos from './image/add-to-photos';
+export ImageAdjust from './image/adjust';
+export ImageAssistantPhoto from './image/assistant-photo';
+export ImageAssistant from './image/assistant';
+export ImageAudiotrack from './image/audiotrack';
+export ImageBlurCircular from './image/blur-circular';
+export ImageBlurLinear from './image/blur-linear';
+export ImageBlurOff from './image/blur-off';
+export ImageBlurOn from './image/blur-on';
+export ImageBrightness1 from './image/brightness-1';
+export ImageBrightness2 from './image/brightness-2';
+export ImageBrightness3 from './image/brightness-3';
+export ImageBrightness4 from './image/brightness-4';
+export ImageBrightness5 from './image/brightness-5';
+export ImageBrightness6 from './image/brightness-6';
+export ImageBrightness7 from './image/brightness-7';
+export ImageBrokenImage from './image/broken-image';
+export ImageBrush from './image/brush';
+export ImageCameraAlt from './image/camera-alt';
+export ImageCameraFront from './image/camera-front';
+export ImageCameraRear from './image/camera-rear';
+export ImageCameraRoll from './image/camera-roll';
+export ImageCamera from './image/camera';
+export ImageCenterFocusStrong from './image/center-focus-strong';
+export ImageCenterFocusWeak from './image/center-focus-weak';
+export ImageCollectionsBookmark from './image/collections-bookmark';
+export ImageCollections from './image/collections';
+export ImageColorLens from './image/color-lens';
+export ImageColorize from './image/colorize';
+export ImageCompare from './image/compare';
+export ImageControlPointDuplicate from './image/control-point-duplicate';
+export ImageControlPoint from './image/control-point';
+export ImageCrop169 from './image/crop-16-9';
+export ImageCrop32 from './image/crop-3-2';
+export ImageCrop54 from './image/crop-5-4';
+export ImageCrop75 from './image/crop-7-5';
+export ImageCropDin from './image/crop-din';
+export ImageCropFree from './image/crop-free';
+export ImageCropLandscape from './image/crop-landscape';
+export ImageCropOriginal from './image/crop-original';
+export ImageCropPortrait from './image/crop-portrait';
+export ImageCropRotate from './image/crop-rotate';
+export ImageCropSquare from './image/crop-square';
+export ImageCrop from './image/crop';
+export ImageDehaze from './image/dehaze';
+export ImageDetails from './image/details';
+export ImageEdit from './image/edit';
+export ImageExposureNeg1 from './image/exposure-neg-1';
+export ImageExposureNeg2 from './image/exposure-neg-2';
+export ImageExposurePlus1 from './image/exposure-plus-1';
+export ImageExposurePlus2 from './image/exposure-plus-2';
+export ImageExposureZero from './image/exposure-zero';
+export ImageExposure from './image/exposure';
+export ImageFilter1 from './image/filter-1';
+export ImageFilter2 from './image/filter-2';
+export ImageFilter3 from './image/filter-3';
+export ImageFilter4 from './image/filter-4';
+export ImageFilter5 from './image/filter-5';
+export ImageFilter6 from './image/filter-6';
+export ImageFilter7 from './image/filter-7';
+export ImageFilter8 from './image/filter-8';
+export ImageFilter9Plus from './image/filter-9-plus';
+export ImageFilter9 from './image/filter-9';
+export ImageFilterBAndW from './image/filter-b-and-w';
+export ImageFilterCenterFocus from './image/filter-center-focus';
+export ImageFilterDrama from './image/filter-drama';
+export ImageFilterFrames from './image/filter-frames';
+export ImageFilterHdr from './image/filter-hdr';
+export ImageFilterNone from './image/filter-none';
+export ImageFilterTiltShift from './image/filter-tilt-shift';
+export ImageFilterVintage from './image/filter-vintage';
+export ImageFilter from './image/filter';
+export ImageFlare from './image/flare';
+export ImageFlashAuto from './image/flash-auto';
+export ImageFlashOff from './image/flash-off';
+export ImageFlashOn from './image/flash-on';
+export ImageFlip from './image/flip';
+export ImageGradient from './image/gradient';
+export ImageGrain from './image/grain';
+export ImageGridOff from './image/grid-off';
+export ImageGridOn from './image/grid-on';
+export ImageHdrOff from './image/hdr-off';
+export ImageHdrOn from './image/hdr-on';
+export ImageHdrStrong from './image/hdr-strong';
+export ImageHdrWeak from './image/hdr-weak';
+export ImageHealing from './image/healing';
+export ImageImageAspectRatio from './image/image-aspect-ratio';
+export ImageImage from './image/image';
+export ImageIso from './image/iso';
+export ImageLandscape from './image/landscape';
+export ImageLeakAdd from './image/leak-add';
+export ImageLeakRemove from './image/leak-remove';
+export ImageLens from './image/lens';
+export ImageLinkedCamera from './image/linked-camera';
+export ImageLooks3 from './image/looks-3';
+export ImageLooks4 from './image/looks-4';
+export ImageLooks5 from './image/looks-5';
+export ImageLooks6 from './image/looks-6';
+export ImageLooksOne from './image/looks-one';
+export ImageLooksTwo from './image/looks-two';
+export ImageLooks from './image/looks';
+export ImageLoupe from './image/loupe';
+export ImageMonochromePhotos from './image/monochrome-photos';
+export ImageMovieCreation from './image/movie-creation';
+export ImageMovieFilter from './image/movie-filter';
+export ImageMusicNote from './image/music-note';
+export ImageNaturePeople from './image/nature-people';
+export ImageNature from './image/nature';
+export ImageNavigateBefore from './image/navigate-before';
+export ImageNavigateNext from './image/navigate-next';
+export ImagePalette from './image/palette';
+export ImagePanoramaFishEye from './image/panorama-fish-eye';
+export ImagePanoramaHorizontal from './image/panorama-horizontal';
+export ImagePanoramaVertical from './image/panorama-vertical';
+export ImagePanoramaWideAngle from './image/panorama-wide-angle';
+export ImagePanorama from './image/panorama';
+export ImagePhotoAlbum from './image/photo-album';
+export ImagePhotoCamera from './image/photo-camera';
+export ImagePhotoFilter from './image/photo-filter';
+export ImagePhotoLibrary from './image/photo-library';
+export ImagePhotoSizeSelectActual from './image/photo-size-select-actual';
+export ImagePhotoSizeSelectLarge from './image/photo-size-select-large';
+export ImagePhotoSizeSelectSmall from './image/photo-size-select-small';
+export ImagePhoto from './image/photo';
+export ImagePictureAsPdf from './image/picture-as-pdf';
+export ImagePortrait from './image/portrait';
+export ImageRemoveRedEye from './image/remove-red-eye';
+export ImageRotate90DegreesCcw from './image/rotate-90-degrees-ccw';
+export ImageRotateLeft from './image/rotate-left';
+export ImageRotateRight from './image/rotate-right';
+export ImageSlideshow from './image/slideshow';
+export ImageStraighten from './image/straighten';
+export ImageStyle from './image/style';
+export ImageSwitchCamera from './image/switch-camera';
+export ImageSwitchVideo from './image/switch-video';
+export ImageTagFaces from './image/tag-faces';
+export ImageTexture from './image/texture';
+export ImageTimelapse from './image/timelapse';
+export ImageTimer10 from './image/timer-10';
+export ImageTimer3 from './image/timer-3';
+export ImageTimerOff from './image/timer-off';
+export ImageTimer from './image/timer';
+export ImageTonality from './image/tonality';
+export ImageTransform from './image/transform';
+export ImageTune from './image/tune';
+export ImageViewComfy from './image/view-comfy';
+export ImageViewCompact from './image/view-compact';
+export ImageVignette from './image/vignette';
+export ImageWbAuto from './image/wb-auto';
+export ImageWbCloudy from './image/wb-cloudy';
+export ImageWbIncandescent from './image/wb-incandescent';
+export ImageWbIridescent from './image/wb-iridescent';
+export ImageWbSunny from './image/wb-sunny';
+export MapsAddLocation from './maps/add-location';
+export MapsBeenhere from './maps/beenhere';
+export MapsDirectionsBike from './maps/directions-bike';
+export MapsDirectionsBoat from './maps/directions-boat';
+export MapsDirectionsBus from './maps/directions-bus';
+export MapsDirectionsCar from './maps/directions-car';
+export MapsDirectionsRailway from './maps/directions-railway';
+export MapsDirectionsRun from './maps/directions-run';
+export MapsDirectionsSubway from './maps/directions-subway';
+export MapsDirectionsTransit from './maps/directions-transit';
+export MapsDirectionsWalk from './maps/directions-walk';
+export MapsDirections from './maps/directions';
+export MapsEditLocation from './maps/edit-location';
+export MapsFlight from './maps/flight';
+export MapsHotel from './maps/hotel';
+export MapsLayersClear from './maps/layers-clear';
+export MapsLayers from './maps/layers';
+export MapsLocalActivity from './maps/local-activity';
+export MapsLocalAirport from './maps/local-airport';
+export MapsLocalAtm from './maps/local-atm';
+export MapsLocalBar from './maps/local-bar';
+export MapsLocalCafe from './maps/local-cafe';
+export MapsLocalCarWash from './maps/local-car-wash';
+export MapsLocalConvenienceStore from './maps/local-convenience-store';
+export MapsLocalDining from './maps/local-dining';
+export MapsLocalDrink from './maps/local-drink';
+export MapsLocalFlorist from './maps/local-florist';
+export MapsLocalGasStation from './maps/local-gas-station';
+export MapsLocalGroceryStore from './maps/local-grocery-store';
+export MapsLocalHospital from './maps/local-hospital';
+export MapsLocalHotel from './maps/local-hotel';
+export MapsLocalLaundryService from './maps/local-laundry-service';
+export MapsLocalLibrary from './maps/local-library';
+export MapsLocalMall from './maps/local-mall';
+export MapsLocalMovies from './maps/local-movies';
+export MapsLocalOffer from './maps/local-offer';
+export MapsLocalParking from './maps/local-parking';
+export MapsLocalPharmacy from './maps/local-pharmacy';
+export MapsLocalPhone from './maps/local-phone';
+export MapsLocalPizza from './maps/local-pizza';
+export MapsLocalPlay from './maps/local-play';
+export MapsLocalPostOffice from './maps/local-post-office';
+export MapsLocalPrintshop from './maps/local-printshop';
+export MapsLocalSee from './maps/local-see';
+export MapsLocalShipping from './maps/local-shipping';
+export MapsLocalTaxi from './maps/local-taxi';
+export MapsMap from './maps/map';
+export MapsMyLocation from './maps/my-location';
+export MapsNavigation from './maps/navigation';
+export MapsNearMe from './maps/near-me';
+export MapsPersonPinCircle from './maps/person-pin-circle';
+export MapsPersonPin from './maps/person-pin';
+export MapsPinDrop from './maps/pin-drop';
+export MapsPlace from './maps/place';
+export MapsRateReview from './maps/rate-review';
+export MapsRestaurantMenu from './maps/restaurant-menu';
+export MapsSatellite from './maps/satellite';
+export MapsStoreMallDirectory from './maps/store-mall-directory';
+export MapsTerrain from './maps/terrain';
+export MapsTraffic from './maps/traffic';
+export MapsZoomOutMap from './maps/zoom-out-map';
+export NavigationApps from './navigation/apps';
+export NavigationArrowBack from './navigation/arrow-back';
+export NavigationArrowDownward from './navigation/arrow-downward';
+export NavigationArrowDropDownCircle from './navigation/arrow-drop-down-circle';
+export NavigationArrowDropDown from './navigation/arrow-drop-down';
+export NavigationArrowDropUp from './navigation/arrow-drop-up';
+export NavigationArrowForward from './navigation/arrow-forward';
+export NavigationArrowUpward from './navigation/arrow-upward';
+export NavigationCancel from './navigation/cancel';
+export NavigationCheck from './navigation/check';
+export NavigationChevronLeft from './navigation/chevron-left';
+export NavigationChevronRight from './navigation/chevron-right';
+export NavigationClose from './navigation/close';
+export NavigationExpandLess from './navigation/expand-less';
+export NavigationExpandMore from './navigation/expand-more';
+export NavigationFullscreenExit from './navigation/fullscreen-exit';
+export NavigationFullscreen from './navigation/fullscreen';
+export NavigationMenu from './navigation/menu';
+export NavigationMoreHoriz from './navigation/more-horiz';
+export NavigationMoreVert from './navigation/more-vert';
+export NavigationRefresh from './navigation/refresh';
+export NavigationSubdirectoryArrowLeft from './navigation/subdirectory-arrow-left';
+export NavigationSubdirectoryArrowRight from './navigation/subdirectory-arrow-right';
+export NavigationUnfoldLess from './navigation/unfold-less';
+export NavigationUnfoldMore from './navigation/unfold-more';
+export NavigationArrowDropRight from './navigation-arrow-drop-right';
+export NotificationAdb from './notification/adb';
+export NotificationAirlineSeatFlatAngled from './notification/airline-seat-flat-angled';
+export NotificationAirlineSeatFlat from './notification/airline-seat-flat';
+export NotificationAirlineSeatIndividualSuite from './notification/airline-seat-individual-suite';
+export NotificationAirlineSeatLegroomExtra from './notification/airline-seat-legroom-extra';
+export NotificationAirlineSeatLegroomNormal from './notification/airline-seat-legroom-normal';
+export NotificationAirlineSeatLegroomReduced from './notification/airline-seat-legroom-reduced';
+export NotificationAirlineSeatReclineExtra from './notification/airline-seat-recline-extra';
+export NotificationAirlineSeatReclineNormal from './notification/airline-seat-recline-normal';
+export NotificationBluetoothAudio from './notification/bluetooth-audio';
+export NotificationConfirmationNumber from './notification/confirmation-number';
+export NotificationDiscFull from './notification/disc-full';
+export NotificationDoNotDisturbAlt from './notification/do-not-disturb-alt';
+export NotificationDoNotDisturb from './notification/do-not-disturb';
+export NotificationDriveEta from './notification/drive-eta';
+export NotificationEnhancedEncryption from './notification/enhanced-encryption';
+export NotificationEventAvailable from './notification/event-available';
+export NotificationEventBusy from './notification/event-busy';
+export NotificationEventNote from './notification/event-note';
+export NotificationFolderSpecial from './notification/folder-special';
+export NotificationLiveTv from './notification/live-tv';
+export NotificationMms from './notification/mms';
+export NotificationMore from './notification/more';
+export NotificationNetworkCheck from './notification/network-check';
+export NotificationNetworkLocked from './notification/network-locked';
+export NotificationNoEncryption from './notification/no-encryption';
+export NotificationOndemandVideo from './notification/ondemand-video';
+export NotificationPersonalVideo from './notification/personal-video';
+export NotificationPhoneBluetoothSpeaker from './notification/phone-bluetooth-speaker';
+export NotificationPhoneForwarded from './notification/phone-forwarded';
+export NotificationPhoneInTalk from './notification/phone-in-talk';
+export NotificationPhoneLocked from './notification/phone-locked';
+export NotificationPhoneMissed from './notification/phone-missed';
+export NotificationPhonePaused from './notification/phone-paused';
+export NotificationPower from './notification/power';
+export NotificationRvHookup from './notification/rv-hookup';
+export NotificationSdCard from './notification/sd-card';
+export NotificationSimCardAlert from './notification/sim-card-alert';
+export NotificationSmsFailed from './notification/sms-failed';
+export NotificationSms from './notification/sms';
+export NotificationSyncDisabled from './notification/sync-disabled';
+export NotificationSyncProblem from './notification/sync-problem';
+export NotificationSync from './notification/sync';
+export NotificationSystemUpdate from './notification/system-update';
+export NotificationTapAndPlay from './notification/tap-and-play';
+export NotificationTimeToLeave from './notification/time-to-leave';
+export NotificationVibration from './notification/vibration';
+export NotificationVoiceChat from './notification/voice-chat';
+export NotificationVpnLock from './notification/vpn-lock';
+export NotificationWc from './notification/wc';
+export NotificationWifi from './notification/wifi';
+export PlacesAcUnit from './places/ac-unit';
+export PlacesAirportShuttle from './places/airport-shuttle';
+export PlacesAllInclusive from './places/all-inclusive';
+export PlacesBeachAccess from './places/beach-access';
+export PlacesBusinessCenter from './places/business-center';
+export PlacesCasino from './places/casino';
+export PlacesChildCare from './places/child-care';
+export PlacesChildFriendly from './places/child-friendly';
+export PlacesFitnessCenter from './places/fitness-center';
+export PlacesFreeBreakfast from './places/free-breakfast';
+export PlacesGolfCourse from './places/golf-course';
+export PlacesHotTub from './places/hot-tub';
+export PlacesKitchen from './places/kitchen';
+export PlacesPool from './places/pool';
+export PlacesRoomService from './places/room-service';
+export PlacesSmokeFree from './places/smoke-free';
+export PlacesSmokingRooms from './places/smoking-rooms';
+export PlacesSpa from './places/spa';
+export SocialCake from './social/cake';
+export SocialDomain from './social/domain';
+export SocialGroupAdd from './social/group-add';
+export SocialGroup from './social/group';
+export SocialLocationCity from './social/location-city';
+export SocialMoodBad from './social/mood-bad';
+export SocialMood from './social/mood';
+export SocialNotificationsActive from './social/notifications-active';
+export SocialNotificationsNone from './social/notifications-none';
+export SocialNotificationsOff from './social/notifications-off';
+export SocialNotificationsPaused from './social/notifications-paused';
+export SocialNotifications from './social/notifications';
+export SocialPages from './social/pages';
+export SocialPartyMode from './social/party-mode';
+export SocialPeopleOutline from './social/people-outline';
+export SocialPeople from './social/people';
+export SocialPersonAdd from './social/person-add';
+export SocialPersonOutline from './social/person-outline';
+export SocialPerson from './social/person';
+export SocialPlusOne from './social/plus-one';
+export SocialPoll from './social/poll';
+export SocialPublic from './social/public';
+export SocialSchool from './social/school';
+export SocialShare from './social/share';
+export SocialWhatshot from './social/whatshot';
+export ToggleCheckBoxOutlineBlank from './toggle/check-box-outline-blank';
+export ToggleCheckBox from './toggle/check-box';
+export ToggleIndeterminateCheckBox from './toggle/indeterminate-check-box';
+export ToggleRadioButtonChecked from './toggle/radio-button-checked';
+export ToggleRadioButtonUnchecked from './toggle/radio-button-unchecked';
+export ToggleStarBorder from './toggle/star-border';
+export ToggleStarHalf from './toggle/star-half';
+export ToggleStar from './toggle/star';

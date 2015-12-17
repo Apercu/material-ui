@@ -1,6 +1,4 @@
-export default {
-  Menu: require('./menu'),
-  MenuItem: require('./menu-item'),
-  LinkMenuItem: require('./link-menu-item'),
-  SubheaderMenuItem: require('./subheader-menu-item'),
-};
+export Menu from './menu';
+export MenuItem from './menu-item';
+export LinkMenuItem from './link-menu-item';
+export SubheaderMenuItem from './subheader-menu-item';

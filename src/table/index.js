@@ -1,9 +1,7 @@
-export default {
-  Table: require('./table'),
-  TableBody: require('./table-body'),
-  TableFooter: require('./table-footer'),
-  TableHeader: require('./table-header'),
-  TableHeaderColumn: require('./table-header-column'),
-  TableRow: require('./table-row'),
-  TableRowColumn: require('./table-row-column'),
-};
+export Table from './table';
+export TableBody from './table-body';
+export TableFooter from './table-footer';
+export TableHeader from './table-header';
+export TableHeaderColumn from './table-header-column';
+export TableRow from './table-row';
+export TableRowColumn from './table-row-column';

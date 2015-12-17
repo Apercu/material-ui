@@ -1,5 +1,3 @@
-export default {
-  List: require('./list'),
-  ListDivider: require('./list-divider'),
-  ListItem: require('./list-item'),
-};
+export List from './list';
+export ListDivider from './list-divider';
+export ListItem from './list-item';

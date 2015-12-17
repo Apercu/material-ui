@@ -1,4 +1,2 @@
-export default {
-  GridList: require('./grid-list'),
-  GridTile: require('./grid-tile'),
-};
+export GridList from './grid-list';
+export GridTile from './grid-tile';

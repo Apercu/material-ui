@@ -1,12 +1,10 @@
-export default {
-  ColorManipulator: require('./color-manipulator'),
-  CssEvent: require('./css-event'),
-  Dom: require('./dom'),
-  Events: require('./events'),
-  Extend: require('./extend'),
-  ImmutabilityHelper: require('./immutability-helper'),
-  KeyCode: require('./key-code'),
-  KeyLine: require('./key-line'),
-  UniqueId: require('./unique-id'),
-  Styles: require('./styles'),
-};
+export ColorManipulator from './color-manipulator';
+export CssEvent from './css-event';
+export Dom from './dom';
+export Events from './events';
+export Extend from './extend';
+export ImmutabilityHelper from './immutability-helper';
+export KeyCode from './key-code';
+export KeyLine from './key-line';
+export UniqueId from './unique-id';
+export Styles from './styles';

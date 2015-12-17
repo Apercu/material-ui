@@ -1,6 +1,4 @@
-export default {
-  ClickAwayable: require('./click-awayable'),
-  WindowListenable: require('./window-listenable'),
-  StylePropable: require('./style-propable'),
-  StyleResizable: require('./style-resizable'),
-};
+export ClickAwayable from './click-awayable';
+export WindowListenable from './window-listenable';
+export StylePropable from './style-propable';
+export StyleResizable from './style-resizable';

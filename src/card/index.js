@@ -1,9 +1,7 @@
-export default {
-  Card: require('./card'),
-  CardHeader: require('./card-header'),
-  CardTitle: require('./card-title'),
-  CardMedia: require('./card-media'),
-  CardText: require('./card-text'),
-  CardActions: require('./card-actions'),
-  CardExpandable: require('./card-expandable'),
-};
+export Card from './card';
+export CardHeader from './card-header';
+export CardTitle from './card-title';
+export CardMedia from './card-media';
+export CardText from './card-text';
+export CardActions from './card-actions';
+export CardExpandable from './card-expandable';

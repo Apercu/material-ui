@@ -1,6 +1,4 @@
-export default {
-  Toolbar: require('./toolbar'),
-  ToolbarGroup: require('./toolbar-group'),
-  ToolbarSeparator: require('./toolbar-separator'),
-  ToolbarTitle: require('./toolbar-title'),
-};
+export Toolbar from './toolbar';
+export ToolbarGroup from './toolbar-group';
+export ToolbarSeparator from './toolbar-separator';
+export ToolbarTitle from './toolbar-title';

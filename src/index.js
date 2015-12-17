@@ -1,78 +1,78 @@
-export default {
-  AppBar: require('./app-bar'),
-  AppCanvas: require('./app-canvas'),
-  AutoComplete: require('./auto-complete'),
-  Avatar: require('./avatar'),
-  Badge: require('./badge'),
-  BeforeAfterWrapper: require('./before-after-wrapper'),
-  Card: require('./card/card'),
-  CardActions: require('./card/card-actions'),
-  CardExpandable: require('./card/card-expandable'),
-  CardHeader: require('./card/card-header'),
-  CardMedia: require('./card/card-media'),
-  CardText: require('./card/card-text'),
-  CardTitle: require('./card/card-title'),
-  Checkbox: require('./checkbox'),
-  CircularProgress: require('./circular-progress'),
-  ClearFix: require('./clearfix'),
-  DatePicker: require('./date-picker/date-picker'),
-  DatePickerDialog: require('./date-picker/date-picker-dialog'),
-  Dialog: require('./dialog'),
-  Divider: require('./divider'),
-  DropDownIcon: require('./drop-down-icon'),
-  DropDownMenu: require('./drop-down-menu'),
-  EnhancedButton: require('./enhanced-button'),
-  FlatButton: require('./flat-button'),
-  FloatingActionButton: require('./floating-action-button'),
-  FontIcon: require('./font-icon'),
-  GridList: require('./grid-list/grid-list'),
-  GridTile: require('./grid-list/grid-tile'),
-  IconButton: require('./icon-button'),
-  IconMenu: require('./menus/icon-menu'),
-  LeftNav: require('./left-nav'),
-  LinearProgress: require('./linear-progress'),
-  List: require('./lists/list'),
-  ListDivider: require('./lists/list-divider'),
-  ListItem: require('./lists/list-item'),
-  Menu: require('./menus/menu'),
-  MenuItem: require('./menus/menu-item'),
-  Mixins: require('./mixins/'),
-  Overlay: require('./overlay'),
-  Paper: require('./paper'),
-  Popover: require('./popover/popover'),
-  RadioButton: require('./radio-button'),
-  RadioButtonGroup: require('./radio-button-group'),
-  RaisedButton: require('./raised-button'),
-  RefreshIndicator: require('./refresh-indicator'),
-  Ripples: require('./ripples/'),
-  SelectField: require('./select-field'),
-  SelectableContainerEnhance: require('./hoc/selectable-enhance'),
-  Slider: require('./slider'),
-  SvgIcon: require('./svg-icon'),
-  Icons: {
-    NavigationMenu: require('./svg-icons/navigation/menu'),
-    NavigationChevronLeft: require('./svg-icons/navigation/chevron-left'),
-    NavigationChevronRight: require('./svg-icons/navigation/chevron-right'),
-  },
-  Styles: require('./styles/'),
-  Snackbar: require('./snackbar'),
-  Tab: require('./tabs/tab'),
-  Tabs: require('./tabs/tabs'),
-  Table: require('./table/table'),
-  TableBody: require('./table/table-body'),
-  TableFooter: require('./table/table-footer'),
-  TableHeader: require('./table/table-header'),
-  TableHeaderColumn: require('./table/table-header-column'),
-  TableRow: require('./table/table-row'),
-  TableRowColumn: require('./table/table-row-column'),
-  Toggle: require('./toggle'),
-  ThemeWrapper: require('./theme-wrapper'),
-  TimePicker: require('./time-picker'),
-  TextField: require('./TextField'),
-  Toolbar: require('./toolbar/toolbar'),
-  ToolbarGroup: require('./toolbar/toolbar-group'),
-  ToolbarSeparator: require('./toolbar/toolbar-separator'),
-  ToolbarTitle: require('./toolbar/toolbar-title'),
-  Tooltip: require('./tooltip'),
-  Utils: require('./utils/'),
-};
+export AppBar from './app-bar'
+export AppCanvas from './app-canvas';
+export AutoComplete from './auto-complete';
+export Avatar from './avatar';
+export Badge from './badge';
+export BeforeAfterWrapper from './before-after-wrapper';
+export Card from './card/card';
+export CardActions from './card/card-actions';
+export CardExpandable from './card/card-expandable';
+export CardHeader from './card/card-header';
+export CardMedia from './card/card-media';
+export CardText from './card/card-text';
+export CardTitle from './card/card-title';
+export Checkbox from './checkbox';
+export CircularProgress from './circular-progress';
+export ClearFix from './clearfix';
+export DatePicker from './date-picker/date-picker';
+export DatePickerDialog from './date-picker/date-picker-dialog';
+export Dialog from './dialog';
+export Divider from './divider';
+export DropDownIcon from './drop-down-icon';
+export DropDownMenu from './drop-down-menu';
+export EnhancedButton from './enhanced-button';
+export FlatButton from './flat-button';
+export FloatingActionButton from './floating-action-button';
+export FontIcon from './font-icon';
+export GridList from './grid-list/grid-list';
+export GridTile from './grid-list/grid-tile';
+export IconButton from './icon-button';
+export IconMenu from './menus/icon-menu';
+export LeftNav from './left-nav';
+export LinearProgress from './linear-progress';
+export List from './lists/list';
+export ListDivider from './lists/list-divider';
+export ListItem from './lists/list-item';
+export Menu from './menus/menu';
+export MenuItem from './menus/menu-item';
+export Mixins from './mixins';
+export Overlay from './overlay';
+export Paper from './paper';
+export Popover from './popover/popover';
+export RadioButton from './radio-button';
+export RadioButtonGroup from './radio-button-group';
+export RaisedButton from './raised-button';
+export RefreshIndicator from './refresh-indicator';
+export Ripples from './ripples';
+export SelectField from './select-field';
+export SelectableContainerEnhance from './hoc/selectable-enhance';
+export Slider from './slider';
+export SvgIcon from './svg-icon';
+export Styles from './styles';
+export Snackbar from './snackbar';
+export Tab from './tabs/tab';
+export Tabs from './tabs/tabs';
+export Table from './table/table';
+export TableBody from './table/table-body';
+export TableFooter from './table/table-footer';
+export TableHeader from './table/table-header';
+export TableHeaderColumn from './table/table-header-column';
+export TableRow from './table/table-row';
+export TableRowColumn from './table/table-row-column';
+export Toggle from './toggle';
+export ThemeWrapper from './theme-wrapper';
+export TimePicker from './time-picker';
+export TextField from './TextField';
+export Toolbar from './toolbar/toolbar';
+export ToolbarGroup from './toolbar/toolbar-group';
+export ToolbarSeparator from './toolbar/toolbar-separator';
+export ToolbarTitle from './toolbar/toolbar-title';
+export Tooltip from './tooltip';
+export Utils from './utils';
+
+import { NavigationMenu, NavigationChevronLeft, NavigationChevronRight } from './svg-icons/navigation'
+export const Icons = {
+  NavigationMenu,
+  NavigationChevronLeft,
+  NavigationChevronRight
+}
